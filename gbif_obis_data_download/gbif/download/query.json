@@ -1,0 +1,16 @@
+{
+    "creator": "brynn.zalmanek",
+    "notificationAddresses": [
+        "brynn.zalmanek@noaa.gov"
+    ],
+    "sendNotification": true,
+    "format": "DWCA",
+    "predicate": {
+        "type": "within",
+        "geometry": "POLYGON((-180 60, 180 60, 180 90, -180 90, -180 60))"
+    },
+    "verbatimExtensions": [
+        "http://rs.gbif.org/terms/1.0/DNADerivedData",
+        "http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact"
+    ]
+}
