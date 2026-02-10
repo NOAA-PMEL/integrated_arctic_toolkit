@@ -1,8 +1,8 @@
-from sqlalchemy import Integer, String, Float, DateTime, Text, PrimaryKeyConstraint
+from sqlalchemy import Integer, String, Float, DateTime, Text, PrimaryKeyConstraint, BigInteger
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from datetime import datetime
 from typing import Optional
-from arctic_postgres.database import Base
+from database import Base
 
 # TODO: Figure out where to put index=True
 
@@ -73,7 +73,7 @@ class Occurrence(Base):
    parentEventID: Mapped[Optional[str]] = mapped_column(Text)
    eventType: Mapped[Optional[str]] = mapped_column(Text)
    fieldNumber: Mapped[Optional[str]] = mapped_column(Text)
-   eventDate: Mapped[Optional[datetime]] = mapped_column(DateTime)
+   eventDate: Mapped[Optional[str]] = mapped_column(Text)
    eventTime: Mapped[Optional[str]] = mapped_column(Text)
    startDayOfYear: Mapped[Optional[int]] = mapped_column(Integer)
    endDayOfYear: Mapped[Optional[int]] = mapped_column(Integer)
@@ -147,7 +147,7 @@ class Occurrence(Base):
    typeStatus: Mapped[Optional[str]] = mapped_column(Text)
    identifiedBy: Mapped[Optional[str]] = mapped_column(Text)
    identifiedByID: Mapped[Optional[str]] = mapped_column(Text)
-   dateIdentified: Mapped[Optional[str]] = mapped_column(DateTime)
+   dateIdentified: Mapped[Optional[datetime]] = mapped_column(DateTime)
    identificationReferences: Mapped[Optional[str]] = mapped_column(Text)
    identificationVerificationStatus: Mapped[Optional[str]] = mapped_column(Text)
    identificationRemarks: Mapped[Optional[str]] = mapped_column(Text)
@@ -192,8 +192,8 @@ class Occurrence(Base):
    taxonRemarks: Mapped[Optional[str]] = mapped_column(Text)
    datasetKey: Mapped[Optional[str]] = mapped_column(Text)
    publishingCountry: Mapped[Optional[str]] = mapped_column(String(10))
-   lastInterpreted: Mapped[Optional[str]] = mapped_column(DateTime)
-   elevation: Mapped[float] = mapped_column(Float)
+   lastInterpreted: Mapped[Optional[datetime]] = mapped_column(DateTime)
+   elevation: Mapped[Optional[float]] = mapped_column(Float)
    elevationAccuracy: Mapped[Optional[str]] = mapped_column(String)
    depth: Mapped[Optional[float]] = mapped_column(Float)
    depthAccuracy: Mapped[Optional[str]] = mapped_column(Text)
@@ -223,8 +223,8 @@ class Occurrence(Base):
    verbatimScientificName: Mapped[Optional[str]] = mapped_column(Text)
    typifiedName: Mapped[Optional[str]] = mapped_column(Text)
    protocol: Mapped[Optional[str]] = mapped_column(Text)
-   lastParsed: Mapped[Optional[str]] = mapped_column(DateTime)
-   lastCrawled: Mapped[Optional[str]] = mapped_column(DateTime)
+   lastParsed: Mapped[Optional[datetime]] = mapped_column(DateTime)
+   lastCrawled: Mapped[Optional[datetime]] = mapped_column(DateTime)
    isInvasive: Mapped[Optional[str]] = mapped_column(Text)
    repatriated: Mapped[Optional[str]] = mapped_column(Text)
    relativeOrganismQuantity: Mapped[Optional[str]] = mapped_column(Text)
@@ -245,15 +245,15 @@ class Occurrence(Base):
    has_mof: Mapped[Optional[int]] = mapped_column(Integer)
    dataset_id: Mapped[Optional[str]] = mapped_column(Text)
    aphiaid: Mapped[Optional[int]] = mapped_column(Integer)
-   areas: Mapped[Optional[str]] = mapped_column(Integer)
+   areas: Mapped[Optional[str]] = mapped_column(String)
    associatedMedia: Mapped[Optional[str]] = mapped_column(Text)
    bathymetry: Mapped[Optional[str]] = mapped_column(String)
    brackish: Mapped[Optional[int]] = mapped_column(Integer) # boolean
    classid: Mapped[Optional[str]] = mapped_column(String)
    country: Mapped[Optional[str]] = mapped_column(Text)
-   date_end: Mapped[Optional[int]] = mapped_column(Integer)
-   date_mid: Mapped[Optional[int]] = mapped_column(Integer)
-   date_start: Mapped[Optional[int]] = mapped_column(Integer)
+   date_end: Mapped[Optional[int]] = mapped_column(BigInteger)
+   date_mid: Mapped[Optional[int]] = mapped_column(BigInteger)
+   date_start: Mapped[Optional[int]] = mapped_column(BigInteger)
    date_year: Mapped[Optional[int]] = mapped_column(Integer)
    division: Mapped[Optional[str]] = mapped_column(Text)
    divisionid: Mapped[Optional[str]] = mapped_column(String)
@@ -344,7 +344,7 @@ class Occurrence(Base):
    flags: Mapped[Optional[str]] = mapped_column(Text)
    dropped: Mapped[Optional[int]] = mapped_column(Integer) # boolean
    absence: Mapped[Optional[int]] = mapped_column(Integer) # boolean
-   geometry: Mapped[str] = mapped_column(String)
+   geometry: Mapped[Optional[str]] = mapped_column(String)
 
    __table_args__ = (
       PrimaryKeyConstraint('data_source', 'source_id', name='occurrence_pkey'),

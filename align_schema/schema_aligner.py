@@ -3,14 +3,14 @@ import pyarrow.parquet as pq
 import pyarrow as pa
 from pathlib import Path
 from datetime import datetime
-from arctic_postgres.schema_comparison.compare_schemas import SchemaComparer
+from align_schema.schema_comparison.compare_schemas import SchemaComparer
 
 class DwcSchemaAligner:
 
     DATA_PARQUET_DIR = '/home/mule-external/sci-dig/arctic_toolkit'
     GBIF_DATA_SUBDIR = 'gbif'
     OBIS_DATA_SUBDIR = 'obis'
-    MAIN_DWC_TERMS = pd.read_csv('/home/users/zalmanek/arctic_postgres/gbif_obis_data_download/align_schema/all_dwc_vertical.csv', header=None)[0].tolist()
+    MAIN_DWC_TERMS = pd.read_csv('/home/users/zalmanek/integrated_arctic_toolkit/align_schema/all_dwc_vertical.csv', header=None)[0].tolist()
 
     OCCURRENCES = "occ"
     DNA_DERIVED = "dna_derived"
@@ -109,15 +109,15 @@ class DwcSchemaAligner:
         
         dna_derived_comparer = SchemaComparer(obis_parquet=self.parquet_files.get(self.OBIS_DATA_SUBDIR).get(self.DNA_DERIVED),
                                               gbif_parquet=self.parquet_files.get(self.GBIF_DATA_SUBDIR).get(self.DNA_DERIVED),
-                                              output_csv_path=save_dir / "dna_schema_comparison.csv")
+                                              output_csv_path=save_dir / "/home/users/zalmanek/integrated_arctic_toolkit/align_schema/schema_comparison/comparison_csvs/dna_schema_comparison.csv")
         
         mof_comparer = SchemaComparer(obis_parquet=self.parquet_files.get(self.OBIS_DATA_SUBDIR).get(self.MOF),
                                       gbif_parquet=self.parquet_files.get(self.GBIF_DATA_SUBDIR).get(self.MOF),
-                                      output_csv_path=save_dir / "mof_schema_comparison.csv")
+                                      output_csv_path=save_dir / "/home/users/zalmanek/integrated_arctic_toolkit/align_schema/schema_comparison/comparison_csvs/mof_schema_comparison.csv")
         
         occ_comparer = SchemaComparer(obis_parquet=self.parquet_files.get(self.OBIS_DATA_SUBDIR).get(self.OCCURRENCES),
                                       gbif_parquet=self.parquet_files.get(self.GBIF_DATA_SUBDIR).get(self.OCCURRENCES),
-                                      output_csv_path=save_dir / "occ_schema_comparison.csv")
+                                      output_csv_path=save_dir / "/home/users/zalmanek/integrated_arctic_toolkit/align_schema/schema_comparison/comparison_csvs/occ_schema_comparison.csv")
         
         return occ_comparer.mapping_df, dna_derived_comparer.mapping_df, mof_comparer.mapping_df
 

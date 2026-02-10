@@ -1,8 +1,8 @@
 from typing import Optional
 from sqlalchemy import Integer, String, Text, PrimaryKeyConstraint, ForeignKeyConstraint
 from sqlalchemy.orm import relationship, Mapped, mapped_column
-from arctic_postgres.models.occurrence import Occurrence
-from arctic_postgres.database import Base
+from models.occurrence import Occurrence
+from database import Base
 
 
 class MeasurementOfFact(Base):
@@ -15,7 +15,7 @@ class MeasurementOfFact(Base):
    
    datasetkey: Mapped[Optional[str]] = mapped_column(String(36))
    measurementID: Mapped[Optional[str]] = mapped_column(Text)
-   occurrenceID: Mapped[Optional[str]] = mapped_column(Text, description="From GBIF, the univerisal Darwin Core identifier created by the data producer. May be aligned with the id field below from Obis?")
+   occurrenceID: Mapped[Optional[str]] = mapped_column(Text, comment="From GBIF, the univerisal Darwin Core identifier created by the data producer. May be aligned with the id field below from Obis?")
    measurementType: Mapped[Optional[str]] = mapped_column(Text, index=True)
    measurementtypeid: Mapped[Optional[str]] = mapped_column(Text)
    measurementValue: Mapped[Optional[str]] = mapped_column(Text)
@@ -28,15 +28,17 @@ class MeasurementOfFact(Base):
    measurementMethod: Mapped[Optional[str]] = mapped_column(Text)
    measurementRemarks: Mapped[Optional[str]] = mapped_column(Text)
    _event_id: Mapped[Optional[str]] = mapped_column(Text)
-   id: Mapped[Optional[str]] = mapped_column(Text, description="From OBIS, not sure what this is, may be the universal OccurrenceID from DarwinCore")
-   level: Mapped[Optional[int]] = mapped_column(Integer, description="From OBIS, not sure.")
+   id: Mapped[Optional[str]] = mapped_column(Text, comment="From OBIS, not sure what this is, may be the universal OccurrenceID from DarwinCore")
+   _id: Mapped[Optional[str]] = mapped_column(Text)
+   _event_id: Mapped[Optional[str]] = mapped_column(Text)
+   level: Mapped[Optional[int]] = mapped_column(Integer, comment="From OBIS, not sure.")
 
    __table_args__ = (
       PrimaryKeyConstraint('data_source', 'source_id', name='mof_pkey'),
       ForeignKeyConstraint(
          ['data_source', 'occurrence_source_id'],
-         ['occurrences.data_source', 'occurrences.source_id'],
-         name='fk_mof_occurrrences'
+         ['occurrence.data_source', 'occurrence.source_id'],
+         name='fk_mof_occurrrence'
       ),
       )
    

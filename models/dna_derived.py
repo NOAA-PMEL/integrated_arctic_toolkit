@@ -1,8 +1,8 @@
 from sqlalchemy import Integer, BigInteger, String, Float, Text, PrimaryKeyConstraint, ForeignKeyConstraint
-from arctic_postgres.models.occurrence import Occurrence
+from models.occurrence import Occurrence
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from typing import Optional
-from arctic_postgres.database import Base
+from database import Base
 
 class DnaDerived(Base):
    __tablename__ = 'dna_derived'
@@ -73,7 +73,7 @@ class DnaDerived(Base):
    featpred: Mapped[Optional[str]] = mapped_column(Text)
    refdb: Mapped[Optional[str]] = mapped_column(Text)
    simsearchmeth: Mapped[Optional[str]] = mapped_column(Text)
-   taxclass: Mapped[Optional[str]] = mapped_column(String(64))
+   taxclass: Mapped[Optional[str]] = mapped_column(Text)
    recover_16s: Mapped[Optional[str]] = mapped_column("16srecover", Text) # needed to rename column in python because can't start with number
    recover_16s_software: Mapped[Optional[str]] = mapped_column("16srecoversoftware", Text) # needed to rename column in python because can't start with number
    trnas: Mapped[Optional[int]] = mapped_column(Integer)
@@ -137,15 +137,17 @@ class DnaDerived(Base):
    pcrprimerlod: Mapped[Optional[str]] = mapped_column(Text)
    pcrprimerloq: Mapped[Optional[str]] = mapped_column(Text)
    _event_id: Mapped[Optional[str]] = mapped_column(Text)
-   id: Mapped[Optional[str]] = mapped_column(Text, description="From OBIS, not sure what this is, may be the universal OccurrenceID from DarwinCore")
+   id: Mapped[Optional[str]] = mapped_column(Text, comment="From OBIS, not sure what this is, may be the universal OccurrenceID from DarwinCore")
+   _id: Mapped[Optional[str]] = mapped_column(Text)
+   _event_id: Mapped[Optional[str]] = mapped_column(Text)
    level: Mapped[Optional[int]] = mapped_column(Integer)
 
    __table_args__ = (
       PrimaryKeyConstraint('data_source', 'source_id', name='dna_derived_pkey'),
       ForeignKeyConstraint(
          ['data_source', 'occurrence_source_id'],
-         ['occurrences.data_source', 'occurrences.source_id'],
-         name='fk_dna_occurrrences'
+         ['occurrence.data_source', 'occurrence.source_id'],
+         name='fk_dna_occurrrence'
       ),
       )
    

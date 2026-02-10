@@ -1,13 +1,19 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+from dotenv import load_dotenv
 
 # Database connection string
 # Format: postgresql://username:paswword@host:port/database_name
 # put in a .evn file and read in.
-DATABASE_URL = "postgresql://username:paswword@host:port/database_name"
+# Load environment variables
+load_dotenv()
 
-# Create engine
-engine = create_engine(DATABASE_URL)
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+# Create engine (echo=True shows SQL queries for debugging)
+engine = create_engine(DATABASE_URL, echo=True)
 
 # Create session factory
 SessionLocal = sessionmaker(bind=engine)
