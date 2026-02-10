@@ -74,6 +74,8 @@ class Occurrence(Base):
    eventType: Mapped[Optional[str]] = mapped_column(Text)
    fieldNumber: Mapped[Optional[str]] = mapped_column(Text)
    eventDate: Mapped[Optional[str]] = mapped_column(Text)
+   startEventDate: Mapped[Optional[datetime]] = mapped_column(DateTime, comment="Parsed originally from eventDate column in both OBIS and GBIF")
+   endEventDate: Mapped[Optional[datetime]] = mapped_column(DateTime, comment="Parsed originally from eventDate column in both OBIS and GBIF")
    eventTime: Mapped[Optional[str]] = mapped_column(Text)
    startDayOfYear: Mapped[Optional[int]] = mapped_column(Integer)
    endDayOfYear: Mapped[Optional[int]] = mapped_column(Integer)

@@ -28,7 +28,6 @@ parquet_file_dict = {
 }
 
 DATETIME_COLUMNS = [
-    # 'eventDate', # Hashed out for now because making string until know what to do about date interval separated by slashes - issue with converting to datetime
     'lastInterpreted',
     'dateIdentified',
     'modified',
@@ -95,7 +94,11 @@ def transorm_df(df: pl):
             pl.col(col).bin.encode("hex") for col in binary_cols
         ])
 
-    # 4. Parse datetime columns with varying ISO formats
+    # 5. Parse out eventDate into two separate cols: startEventDate and endEventDate so can make datetime for search
+    if 'eventDate' in df.columns:
+        df = split_dwc_event_date(df=df)
+
+    # 6. Parse datetime columns with varying ISO formats (minus eventDate (dealt with separately above))
     for col in DATETIME_COLUMNS:
         if col in df.columns:
             if df.schema[col] == pl.Datetime:
@@ -111,10 +114,10 @@ def transorm_df(df: pl):
                     ).alias(col)
                 ])
 
-    # 5 . REmove backticks from column names (e.g. ones that start with numbers)
+    # 7 . REmove backticks from column names (e.g. ones that start with numbers)
     df = df.rename(({c: c.replace("`", "") for c in df.columns}))
 
-    # 6. Cast int columns appropariatley
+    # 8. Cast int columns appropariatley
     int_cols = [col for col in df.columns if col in INT_COLUMNS]
     if int_cols:
         df = df.with_columns([
@@ -122,6 +125,38 @@ def transorm_df(df: pl):
         ])
 
     return df
+
+def split_dwc_event_date(df: pl.DataFrame) -> pl.DataFrame:
+    """
+    Splits a DarwinCore eventDate interval into start and end datetime columns.
+    Handles both 'YYYY-MM-DD' and 'YYYY-MM-DDTHH:MM:SS' formats.
+    """
+
+    event_date_col = "eventDate"
+    
+    return (
+        df.with_columns(
+            # 1. Split the interval by the "/" character into a struct
+            # If no "/" exists, the second field will be null
+            pl.col(event_date_col).str.split_exact("/", 1)
+            .struct.rename_fields(["start_raw", "end_raw"])
+            .alias("_split")
+        )
+        .unnest("_split")
+        .with_columns(
+            # 2. Convert to datetime. 
+            # 'strict=False' allows Polars to try parsing ISO8601 automatically.
+            # If the end date is null (single date event), we fill it with the start date.
+            pl.col("start_raw").str.to_datetime(strict=False).alias("startEventDate"),
+            pl.col("end_raw").str.to_datetime(strict=False).alias("endEventDate")
+        )
+        .with_columns(
+            # 3. Logic: If endEventDate is null, it was a single point in time, not a range.
+            # In DwC, a single date means the start and end are the same day.
+            pl.col("endEventDate").fill_null(pl.col("startEventDate"))
+        )
+        .drop(["start_raw", "end_raw"])
+    )
 
 def load_parquet_streaming(file_path, table_name):
     """
