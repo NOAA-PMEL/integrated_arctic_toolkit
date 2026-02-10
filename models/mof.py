@@ -11,12 +11,12 @@ class MeasurementOfFact(Base):
    data_source: Mapped[str] = mapped_column(String(4), primary_key=True)
    source_id: Mapped[str] = mapped_column(String(50), primary_key=True)
 
-   occurrence_source_id: Mapped[str] = mapped_column(Text, index=True)
+   occurrence_source_id: Mapped[str] = mapped_column(String(50), index=True)
    
    datasetkey: Mapped[Optional[str]] = mapped_column(String(36))
    measurementID: Mapped[Optional[str]] = mapped_column(Text)
    occurrenceID: Mapped[Optional[str]] = mapped_column(Text, comment="From GBIF, the univerisal Darwin Core identifier created by the data producer. May be aligned with the id field below from Obis?")
-   measurementType: Mapped[Optional[str]] = mapped_column(Text, index=True)
+   measurementType: Mapped[Optional[str]] = mapped_column(String(100), index=True)
    measurementtypeid: Mapped[Optional[str]] = mapped_column(Text)
    measurementValue: Mapped[Optional[str]] = mapped_column(Text)
    measurementvalueid: Mapped[Optional[str]] = mapped_column(Text)

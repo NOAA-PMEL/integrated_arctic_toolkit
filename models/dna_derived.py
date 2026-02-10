@@ -10,7 +10,7 @@ class DnaDerived(Base):
    data_source: Mapped[str] = mapped_column(String(4), primary_key=True)
    source_id: Mapped[str] = mapped_column(String(50), primary_key=True)
 
-   occurrence_source_id: Mapped[Optional[str]] = mapped_column(Text, index=True)
+   occurrence_source_id: Mapped[Optional[str]] = mapped_column(String(50), index=True)
    
    datasetkey: Mapped[Optional[str]] = mapped_column(String(36))
    sampname: Mapped[Optional[str]] = mapped_column(Text)
