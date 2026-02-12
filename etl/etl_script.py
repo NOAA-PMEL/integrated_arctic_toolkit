@@ -53,7 +53,7 @@ INT_COLUMNS = ['aphiaid',
 # COLUMNS_TO_DROP = ['geometry'] # a binary column and I think added in because of my q
 
 def create_the_tables(): 
-    Base.metadata.drop_all(bind=engine)
+    # Base.metadata.drop_all(bind=engine)
     create_tables()
     print("Tables created!")
 

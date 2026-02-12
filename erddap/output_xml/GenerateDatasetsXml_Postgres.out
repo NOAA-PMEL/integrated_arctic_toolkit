@@ -1,0 +1,3780 @@
+<!-- NOTE! Since database tables don't have any metadata, you must add metadata
+  below, notably 'units' for each of the dataVariables. -->
+<dataset type="EDDTableFromDatabase" datasetID="arctic_toolkit_test_public_occurrence" active="true">
+    <sourceUrl>jdbc:postgresql://localhost:5432/arctic_toolkit_test</sourceUrl>
+    <driverName>org.postgresql.Driver</driverName>
+    <connectionProperty name="user">erddap</connectionProperty>
+    <connectionProperty name="password">butterfly321</connectionProperty>
+    <catalogName>arctic_toolkit_test</catalogName>
+    <schemaName>public</schemaName>
+    <tableName>occurrence</tableName>
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Point</att>
+        <att name="Conventions">COARDS, CF-1.10, ACDD-1.3</att>
+        <att name="creator_email">pmel.info@noaa.gov</att>
+        <att name="creator_name">NOAA PMEL</att>
+        <att name="creator_type">institution</att>
+        <att name="creator_url">https://www.pmel.noaa.gov/</att>
+        <att name="infoUrl">https://www.pmel.noaa.gov/</att>
+        <att name="institution">NOAA PMEL</att>
+        <att name="keywords">above, absence, accepted, acceptednameusage, acceptednameusageid, acceptedscientificname, acceptedtaxonkey, access, accessrights, according, accuracy, age, algal, aphiaid, areas, array, array-data, associated, associatedmedia, associatedoccurrences, associatedorganisms, associatedreferences, associatedsequences, associatedtaxa, authorship, basis, basisofrecord, bathymetry, bed, behavior, bibliographic, bibliographiccitation, biogeographic, biology, biostratigraphic, bloom, body, brackish, caste, catalognumber, category, centroid, citation, class, classid, classification, classkey, code, collection, collectioncode, collectionid, comprehensive, concept, condition, context, continent, coordinate, coordinateprecision, coordinates, coordinateuncertaintyinmeters, count, country, countrycode, county, crawled, cultivar, cultivarepithet, data, data_source, datageneralizations, dataset, dataset_id, datasetid, datasetkey, datasetname, date, date_end, date_mid, date_start, date_year, dateidentified, datum, day, degree, degreeofestablishment, depth, depthaccuracy, derived, disposition, distance, distancefromcentroidinmeters, division, divisionid, dna, dna_derived, domain, domainid, dropped, dynamic, dynamicproperties, earliest, earliestageorloweststage, earliesteonorlowesteonothem, earliestepochorlowestseries, earliesteraorlowesterathem, earliestperiodorlowestsystem, effort, elevation, elevationaccuracy, end, enddayofyear, endeventdate, entity, environmental, eon, eonothem, epithet, epoch, era, erathem, establishment, establishmentmeans, event, eventdate, eventid, eventremarks, eventtime, eventtype, family, familyid, familykey, field, fieldnotes, fieldnumber, fit, flags, footprint, footprintspatialfit, footprintsrs, footprintwkt, forma, formaid, formation, gbif, gbifregion, generalizations, generic, genericname, genus, genusid, genuskey, geodetic, geodeticdatum, geography, geological, geologicalcontextid, geometry, georeference, georeferenced, georeferencedby, georeferenceddate, georeferenceprotocol, georeferenceremarks, georeferencesources, georeferenceverificationstatus, geospatial, gid, gigaclass, gigaclassid, group, hab, habitat, harmful, has_mof, hascoordinate, hasgeospatialissues, higher, higherclassification, highergeography, highergeographyid, highest, highestbiostratigraphiczone, holder, identification, identificationid, identificationqualifier, identificationreferences, identificationremarks, identifications, identificationverificationstatus, identified, identifiedby, identifiedbyid, identifier, individual, individualcount, information, informationwithheld, infraclass, infraclassid, infrageneric, infragenericepithet, infrakingdom, infrakingdomid, infraorder, infraorderid, infraphylum, infraphylumid, infraspecific, infraspecificepithet, institution, institutioncode, institutionid, integrated, interpreted, invalid, invasive, isinvasive, island, islandgroup, issequenced, issue, issues, iucn, iucnredlistcategory, key, kingdom, kingdomid, kingdomkey, label, laboratory, language, large, lastcrawled, lastinterpreted, lastparsed, latest, latestageorhigheststage, latesteonorhighesteonothem, latestepochorhighestseries, latesteraorhighesterathem, latestperiodorhighestsystem, latitude, level0, level0gid, level0name, level1, level1gid, level1name, level2, level2gid, level2name, level3, level3gid, level3name, license, life, lifestage, list, lithostratigraphic, lithostratigraphicterms, locality, locationaccordingto, locationid, locationremarks, longitude, lowest, lowestbiostratigraphiczone, marine, material, materialentityid, materialentityremarks, materialsampleid, maximum, maximumdepthinmeters, maximumdistanceabovesurfaceinmeters, maximumelevationinmeters, means, media, mediatype, megaclass, megaclassid, member, meteorology, meters, mid, minimum, minimumdepthinmeters, minimumdistanceabovesurfaceinmeters, minimumelevationinmeters, missing, modified, mof, month, municipality, name, nameaccordingto, nameaccordingtoid, namepublishedin, namepublishedinid, namepublishedinyear, noaa, nomenclatural, nomenclaturalcode, nomenclaturalstatus, non, nontaxonomicissue, notes, number, numbers, obis, occurrence, occurrenceid, occurrenceremarks, occurrences, occurrencestatus, ocean, order, orderid, orderkey, organism, organismid, organismname, organismquantity, organismquantitytype, organismremarks, organisms, organismscope, original, originalnameusage, originalnameusageid, othercatalognumbers, owner, ownerinstitutioncode, pacific, parent, parenteventid, parentnameusage, parentnameusageid, parsed, parvorder, parvorderid, parvphylum, parvphylumid, pathway, period, phylum, phylum_division, phylum_divisionid, phylumid, phylumkey, pmel, point, pointradiusspatialfit, precision, preparations, previous, previousidentifications, project, projectid, properties, protocol, province, published, publishedbygbifregion, publisher, publishing, publishingcountry, qualifier, quality, quantity, radius, rank, record, recorded, recordedby, recordedbyid, recordnumber, red, references, region, relative, relativeorganismquantity, remarks, repatriated, reproductive, reproductivecondition, rights, rightsholder, sample, samplesizeunit, samplesizevalue, sampling, samplingeffort, samplingprotocol, scientific, scientificname, scientificnameauthorship, scientificnameid, scope, sea, seawater, section, sectionid, sequenced, sequences, series, sex, shoredistance, size, source, source_id, sources, spatial, species, speciesid, specieskey, specific, specificepithet, srs, sss, sst, stage, start, startdayofyear, starteventdate, state, stateprovince, statistics, status, stewardship, subclass, subclassid, subdivision, subdivisionid, subfamily, subfamilyid, subfamilykey, subforma, subformaid, subgenus, subgenusid, subgenuskey, subkingdom, subkingdomid, suborder, suborderid, subphylum, subphylum_subdivision, subphylum_subdivisionid, subphylumid, subsection, subsectionid, subspecies, subspeciesid, subterclass, subterclassid, subtribe, subtribeid, subtribekey, subvariety, subvarietyid, superclass, superclassid, superdomain, superdomainid, superfamily, superfamilykey, superorder, superorderid, supertribe, supertribeid, surface, system, taxa, taxon, taxonconceptid, taxonid, taxonkey, taxonomic, taxonomicissue, taxonomicstatus, taxonomy, taxonrank, taxonremarks, temperature, terms, time, tribe, tribeid, tribekey, type, typestatus, typified, typifiedname, unaccepted, uncertainty, unit, usage, value, variety, varietyid, verbatim, verbatimcoordinates, verbatimcoordinatesystem, verbatimdepth, verbatimelevation, verbatimeventdate, verbatimidentification, verbatimlabel, verbatimlatitude, verbatimlocality, verbatimlongitude, verbatimscientificname, verbatimsrs, verbatimtaxonrank, verification, vernacular, vernacularname, vertical, verticaldatum, vitality, water, waterbody, withheld, wkt, wrims, year, zone</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local database)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Integrated biological data from Ocean Biogeographic Information System (OBIS) and GBIF. Right now there may be overlap and duplicates between the two data. Check data_source to see where the data originates from.</att>
+        <att name="title">Integrated OBIS and GBIF data</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>data_source</sourceName>
+        <destinationName>data_source</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Data Source</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>source_id</sourceName>
+        <destinationName>source_id</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Source Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>accessRights</sourceName>
+        <destinationName>accessrights</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Access Rights</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>bibliographicCitation</sourceName>
+        <destinationName>bibliographiccitation</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Bibliographic Citation</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>language</sourceName>
+        <destinationName>language</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Language</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>license</sourceName>
+        <destinationName>license</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">License</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>modified</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Modified</att>
+            <att name="source_name">modified</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>publisher</sourceName>
+        <destinationName>publisher</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Publisher</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>references</sourceName>
+        <destinationName>references</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">References</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>rightsHolder</sourceName>
+        <destinationName>rightsholder</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Rights Holder</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>type</sourceName>
+        <destinationName>type</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>institutionID</sourceName>
+        <destinationName>institutionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Institution ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>collectionID</sourceName>
+        <destinationName>collectionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Collection ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>datasetID</sourceName>
+        <destinationName>datasetid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Dataset ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>institutionCode</sourceName>
+        <destinationName>institutioncode</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Institution Code</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>collectionCode</sourceName>
+        <destinationName>collectioncode</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Collection Code</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>datasetName</sourceName>
+        <destinationName>datasetname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Dataset Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ownerInstitutionCode</sourceName>
+        <destinationName>ownerinstitutioncode</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Owner Institution Code</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>basisOfRecord</sourceName>
+        <destinationName>basisofrecord</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Basis Of Record</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>informationWithheld</sourceName>
+        <destinationName>informationwithheld</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Information Withheld</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dataGeneralizations</sourceName>
+        <destinationName>datageneralizations</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Data Generalizations</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dynamicProperties</sourceName>
+        <destinationName>dynamicproperties</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Dynamic Properties</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>occurrenceID</sourceName>
+        <destinationName>occurrenceid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Occurrence ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>catalogNumber</sourceName>
+        <destinationName>catalognumber</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Catalog Number</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>recordNumber</sourceName>
+        <destinationName>recordnumber</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Record Number</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>recordedBy</sourceName>
+        <destinationName>recordedby</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Recorded By</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>recordedByID</sourceName>
+        <destinationName>recordedbyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Recorded By ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>individualCount</sourceName>
+        <destinationName>individualcount</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Individual Count</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismQuantity</sourceName>
+        <destinationName>organismquantity</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Organism Quantity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismQuantityType</sourceName>
+        <destinationName>organismquantitytype</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Organism Quantity Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sex</sourceName>
+        <destinationName>sex</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Biology</att>
+            <att name="long_name">Sex</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lifeStage</sourceName>
+        <destinationName>lifestage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Biology</att>
+            <att name="long_name">Life Stage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>reproductiveCondition</sourceName>
+        <destinationName>reproductivecondition</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Reproductive Condition</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>caste</sourceName>
+        <destinationName>caste</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Caste</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>behavior</sourceName>
+        <destinationName>behavior</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Behavior</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>vitality</sourceName>
+        <destinationName>vitality</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Vitality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>establishmentMeans</sourceName>
+        <destinationName>establishmentmeans</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Establishment Means</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>degreeOfEstablishment</sourceName>
+        <destinationName>degreeofestablishment</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Degree Of Establishment</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>pathway</sourceName>
+        <destinationName>pathway</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Pathway</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferenceVerificationStatus</sourceName>
+        <destinationName>georeferenceverificationstatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Georeference Verification Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>occurrenceStatus</sourceName>
+        <destinationName>occurrencestatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Occurrence Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>preparations</sourceName>
+        <destinationName>preparations</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Preparations</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>disposition</sourceName>
+        <destinationName>disposition</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Disposition</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedOccurrences</sourceName>
+        <destinationName>associatedoccurrences</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Associated Occurrences</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedReferences</sourceName>
+        <destinationName>associatedreferences</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Associated References</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedSequences</sourceName>
+        <destinationName>associatedsequences</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Associated Sequences</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedTaxa</sourceName>
+        <destinationName>associatedtaxa</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Associated Taxa</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>otherCatalogNumbers</sourceName>
+        <destinationName>othercatalognumbers</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Other Catalog Numbers</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>occurrenceRemarks</sourceName>
+        <destinationName>occurrenceremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Occurrence Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismID</sourceName>
+        <destinationName>organismid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Organism ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismName</sourceName>
+        <destinationName>organismname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Organism Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismScope</sourceName>
+        <destinationName>organismscope</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Organism Scope</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedOrganisms</sourceName>
+        <destinationName>associatedorganisms</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Associated Organisms</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>previousIdentifications</sourceName>
+        <destinationName>previousidentifications</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Previous Identifications</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>organismRemarks</sourceName>
+        <destinationName>organismremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Organism Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>materialEntityID</sourceName>
+        <destinationName>materialentityid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Material Entity ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>materialEntityRemarks</sourceName>
+        <destinationName>materialentityremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Material Entity Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimLabel</sourceName>
+        <destinationName>verbatimlabel</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Verbatim Label</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>materialSampleID</sourceName>
+        <destinationName>materialsampleid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Material Sample ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>eventID</sourceName>
+        <destinationName>eventid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Event ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parentEventID</sourceName>
+        <destinationName>parenteventid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Parent Event ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>eventType</sourceName>
+        <destinationName>eventtype</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Event Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>fieldNumber</sourceName>
+        <destinationName>fieldnumber</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Field Number</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>eventDate</sourceName>
+        <destinationName>eventdate</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Event Date</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>startEventDate</sourceName>
+        <destinationName>starteventdate</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Start Event Date</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>endEventDate</sourceName>
+        <destinationName>endeventdate</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">End Event Date</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>eventTime</sourceName>
+        <destinationName>eventtime</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Event Time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>startDayOfYear</sourceName>
+        <destinationName>startdayofyear</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Start Day Of Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>endDayOfYear</sourceName>
+        <destinationName>enddayofyear</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">End Day Of Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>year</sourceName>
+        <destinationName>year</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>month</sourceName>
+        <destinationName>month</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Month</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>day</sourceName>
+        <destinationName>day</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Day</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimEventDate</sourceName>
+        <destinationName>verbatimeventdate</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Verbatim Event Date</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>habitat</sourceName>
+        <destinationName>habitat</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Habitat</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>samplingProtocol</sourceName>
+        <destinationName>samplingprotocol</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sampling Protocol</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sampleSizeValue</sourceName>
+        <destinationName>samplesizevalue</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sample Size Value</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sampleSizeUnit</sourceName>
+        <destinationName>samplesizeunit</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sample Size Unit</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>samplingEffort</sourceName>
+        <destinationName>samplingeffort</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sampling Effort</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>fieldNotes</sourceName>
+        <destinationName>fieldnotes</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Field Notes</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>eventRemarks</sourceName>
+        <destinationName>eventremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Event Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>locationID</sourceName>
+        <destinationName>locationid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Location ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>higherGeographyID</sourceName>
+        <destinationName>highergeographyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Higher Geography ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>higherGeography</sourceName>
+        <destinationName>highergeography</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Higher Geography</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>continent</sourceName>
+        <destinationName>continent</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Continent</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>waterBody</sourceName>
+        <destinationName>waterbody</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Water Body</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>islandGroup</sourceName>
+        <destinationName>islandgroup</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Island Group</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>island</sourceName>
+        <destinationName>island</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Island</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>countryCode</sourceName>
+        <destinationName>countrycode</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Country Code</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>stateProvince</sourceName>
+        <destinationName>stateprovince</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">State Province</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>county</sourceName>
+        <destinationName>county</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">County</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>municipality</sourceName>
+        <destinationName>municipality</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Municipality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>locality</sourceName>
+        <destinationName>locality</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Locality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimLocality</sourceName>
+        <destinationName>verbatimlocality</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Verbatim Locality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimElevation</sourceName>
+        <destinationName>verbatimelevation</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Verbatim Elevation</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verticalDatum</sourceName>
+        <destinationName>verticaldatum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Vertical Datum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimDepth</sourceName>
+        <destinationName>verbatimdepth</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Verbatim Depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>minimumDistanceAboveSurfaceInMeters</sourceName>
+        <destinationName>minimumdistanceabovesurfaceinmeters</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Minimum Distance Above Surface In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>maximumDistanceAboveSurfaceInMeters</sourceName>
+        <destinationName>maximumdistanceabovesurfaceinmeters</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Maximum Distance Above Surface In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>locationAccordingTo</sourceName>
+        <destinationName>locationaccordingto</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Location According To</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>locationRemarks</sourceName>
+        <destinationName>locationremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Location Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>decimalLatitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="source_name">decimalLatitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>decimalLongitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="source_name">decimalLongitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>coordinateUncertaintyInMeters</sourceName>
+        <destinationName>coordinateuncertaintyinmeters</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Coordinate Uncertainty In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>coordinatePrecision</sourceName>
+        <destinationName>coordinateprecision</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Coordinate Precision</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>pointRadiusSpatialFit</sourceName>
+        <destinationName>pointradiusspatialfit</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Point Radius Spatial Fit</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimCoordinateSystem</sourceName>
+        <destinationName>verbatimcoordinatesystem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Verbatim Coordinate System</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimSRS</sourceName>
+        <destinationName>verbatimsrs</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Verbatim SRS</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>footprintWKT</sourceName>
+        <destinationName>footprintwkt</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Footprint WKT</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>footprintSRS</sourceName>
+        <destinationName>footprintsrs</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Footprint SRS</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>footprintSpatialFit</sourceName>
+        <destinationName>footprintspatialfit</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Footprint Spatial Fit</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferencedBy</sourceName>
+        <destinationName>georeferencedby</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Georeferenced By</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferencedDate</sourceName>
+        <destinationName>georeferenceddate</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Georeferenced Date</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferenceProtocol</sourceName>
+        <destinationName>georeferenceprotocol</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Georeference Protocol</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferenceSources</sourceName>
+        <destinationName>georeferencesources</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Georeference Sources</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>georeferenceRemarks</sourceName>
+        <destinationName>georeferenceremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Georeference Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>geologicalContextID</sourceName>
+        <destinationName>geologicalcontextid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Geological Context ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>earliestEonOrLowestEonothem</sourceName>
+        <destinationName>earliesteonorlowesteonothem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Earliest Eon Or Lowest Eonothem</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latestEonOrHighestEonothem</sourceName>
+        <destinationName>latesteonorhighesteonothem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Latest Eon Or Highest Eonothem</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>earliestEraOrLowestErathem</sourceName>
+        <destinationName>earliesteraorlowesterathem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Earliest Era Or Lowest Erathem</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latestEraOrHighestErathem</sourceName>
+        <destinationName>latesteraorhighesterathem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Latest Era Or Highest Erathem</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>earliestPeriodOrLowestSystem</sourceName>
+        <destinationName>earliestperiodorlowestsystem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Earliest Period Or Lowest System</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latestPeriodOrHighestSystem</sourceName>
+        <destinationName>latestperiodorhighestsystem</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Latest Period Or Highest System</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>earliestEpochOrLowestSeries</sourceName>
+        <destinationName>earliestepochorlowestseries</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Earliest Epoch Or Lowest Series</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latestEpochOrHighestSeries</sourceName>
+        <destinationName>latestepochorhighestseries</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Latest Epoch Or Highest Series</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>earliestAgeOrLowestStage</sourceName>
+        <destinationName>earliestageorloweststage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Biology</att>
+            <att name="long_name">Earliest Age Or Lowest Stage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latestAgeOrHighestStage</sourceName>
+        <destinationName>latestageorhigheststage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Biology</att>
+            <att name="long_name">Latest Age Or Highest Stage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lowestBiostratigraphicZone</sourceName>
+        <destinationName>lowestbiostratigraphiczone</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Lowest Biostratigraphic Zone</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>highestBiostratigraphicZone</sourceName>
+        <destinationName>highestbiostratigraphiczone</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Highest Biostratigraphic Zone</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lithostratigraphicTerms</sourceName>
+        <destinationName>lithostratigraphicterms</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Lithostratigraphic Terms</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>group</sourceName>
+        <destinationName>group</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Group</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>formation</sourceName>
+        <destinationName>formation</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Formation</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>member</sourceName>
+        <destinationName>member</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Member</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>bed</sourceName>
+        <destinationName>bed</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Bed</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identificationID</sourceName>
+        <destinationName>identificationid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Identification ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimIdentification</sourceName>
+        <destinationName>verbatimidentification</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Verbatim Identification</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identificationQualifier</sourceName>
+        <destinationName>identificationqualifier</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Identification Qualifier</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>typeStatus</sourceName>
+        <destinationName>typestatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Type Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identifiedBy</sourceName>
+        <destinationName>identifiedby</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Identified By</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identifiedByID</sourceName>
+        <destinationName>identifiedbyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Identified By ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dateIdentified</sourceName>
+        <destinationName>dateidentified</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date Identified</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identificationReferences</sourceName>
+        <destinationName>identificationreferences</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Identification References</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identificationVerificationStatus</sourceName>
+        <destinationName>identificationverificationstatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Identification Verification Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>identificationRemarks</sourceName>
+        <destinationName>identificationremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Identification Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonID</sourceName>
+        <destinationName>taxonid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Taxon ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>scientificNameID</sourceName>
+        <destinationName>scientificnameid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Scientific Name ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>acceptedNameUsageID</sourceName>
+        <destinationName>acceptednameusageid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Accepted Name Usage ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parentNameUsageID</sourceName>
+        <destinationName>parentnameusageid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Parent Name Usage ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>originalNameUsageID</sourceName>
+        <destinationName>originalnameusageid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Original Name Usage ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>nameAccordingToID</sourceName>
+        <destinationName>nameaccordingtoid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Name According To ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>namePublishedInID</sourceName>
+        <destinationName>namepublishedinid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Name Published In ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonConceptID</sourceName>
+        <destinationName>taxonconceptid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Taxon Concept ID</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>scientificName</sourceName>
+        <destinationName>scientificname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Scientific Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>acceptedNameUsage</sourceName>
+        <destinationName>acceptednameusage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Accepted Name Usage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parentNameUsage</sourceName>
+        <destinationName>parentnameusage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Parent Name Usage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>originalNameUsage</sourceName>
+        <destinationName>originalnameusage</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Original Name Usage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>nameAccordingTo</sourceName>
+        <destinationName>nameaccordingto</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Name According To</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>namePublishedIn</sourceName>
+        <destinationName>namepublishedin</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Name Published In</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>namePublishedInYear</sourceName>
+        <destinationName>namepublishedinyear</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Name Published In Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>higherClassification</sourceName>
+        <destinationName>higherclassification</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Higher Classification</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>kingdom</sourceName>
+        <destinationName>kingdom</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kingdom</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>phylum</sourceName>
+        <destinationName>phylum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Phylum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>class</sourceName>
+        <destinationName>class</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Class</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>order</sourceName>
+        <destinationName>order</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Order</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superfamily</sourceName>
+        <destinationName>superfamily</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Superfamily</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>family</sourceName>
+        <destinationName>family</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Family</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subfamily</sourceName>
+        <destinationName>subfamily</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subfamily</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>tribe</sourceName>
+        <destinationName>tribe</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Tribe</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subtribe</sourceName>
+        <destinationName>subtribe</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subtribe</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>genus</sourceName>
+        <destinationName>genus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Genus</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>genericName</sourceName>
+        <destinationName>genericname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Generic Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subgenus</sourceName>
+        <destinationName>subgenus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subgenus</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infragenericEpithet</sourceName>
+        <destinationName>infragenericepithet</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infrageneric Epithet</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>specificEpithet</sourceName>
+        <destinationName>specificepithet</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Specific Epithet</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraspecificEpithet</sourceName>
+        <destinationName>infraspecificepithet</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infraspecific Epithet</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>cultivarEpithet</sourceName>
+        <destinationName>cultivarepithet</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Cultivar Epithet</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonRank</sourceName>
+        <destinationName>taxonrank</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Taxon Rank</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimTaxonRank</sourceName>
+        <destinationName>verbatimtaxonrank</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Verbatim Taxon Rank</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>vernacularName</sourceName>
+        <destinationName>vernacularname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Vernacular Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>nomenclaturalCode</sourceName>
+        <destinationName>nomenclaturalcode</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Nomenclatural Code</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonomicStatus</sourceName>
+        <destinationName>taxonomicstatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Taxonomic Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>nomenclaturalStatus</sourceName>
+        <destinationName>nomenclaturalstatus</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Nomenclatural Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonRemarks</sourceName>
+        <destinationName>taxonremarks</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Taxon Remarks</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>datasetKey</sourceName>
+        <destinationName>datasetkey</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Dataset Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>publishingCountry</sourceName>
+        <destinationName>publishingcountry</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Publishing Country</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lastInterpreted</sourceName>
+        <destinationName>lastinterpreted</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Last Interpreted</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>elevation</sourceName>
+        <destinationName>elevation</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Elevation</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>elevationAccuracy</sourceName>
+        <destinationName>elevationaccuracy</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Elevation Accuracy</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+            <att name="standard_name">depth</att>
+            <att name="units">m</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depthAccuracy</sourceName>
+        <destinationName>depthaccuracy</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>distanceFromCentroidInMeters</sourceName>
+        <destinationName>distancefromcentroidinmeters</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Distance From Centroid In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>issue</sourceName>
+        <destinationName>issue</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Issue</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonomicIssue</sourceName>
+        <destinationName>taxonomicissue</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Taxonomic Issue</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>nonTaxonomicIssue</sourceName>
+        <destinationName>nontaxonomicissue</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Non Taxonomic Issue</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>mediaType</sourceName>
+        <destinationName>mediatype</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Media Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>hasCoordinate</sourceName>
+        <destinationName>hascoordinate</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Has Coordinate</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>hasGeospatialIssues</sourceName>
+        <destinationName>hasgeospatialissues</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Has Geospatial Issues</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>taxonKey</sourceName>
+        <destinationName>taxonkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Taxon Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>acceptedTaxonKey</sourceName>
+        <destinationName>acceptedtaxonkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Accepted Taxon Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>kingdomKey</sourceName>
+        <destinationName>kingdomkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kingdom Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>phylumKey</sourceName>
+        <destinationName>phylumkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Phylum Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>classKey</sourceName>
+        <destinationName>classkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Class Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>orderKey</sourceName>
+        <destinationName>orderkey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Order Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superfamilyKey</sourceName>
+        <destinationName>superfamilykey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Superfamily Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>familyKey</sourceName>
+        <destinationName>familykey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Family Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subfamilyKey</sourceName>
+        <destinationName>subfamilykey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subfamily Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>tribeKey</sourceName>
+        <destinationName>tribekey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Tribe Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subtribeKey</sourceName>
+        <destinationName>subtribekey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subtribe Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>genusKey</sourceName>
+        <destinationName>genuskey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Genus Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subgenusKey</sourceName>
+        <destinationName>subgenuskey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subgenus Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>speciesKey</sourceName>
+        <destinationName>specieskey</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Species Key</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>species</sourceName>
+        <destinationName>species</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Species</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>acceptedScientificName</sourceName>
+        <destinationName>acceptedscientificname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Accepted Scientific Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimScientificName</sourceName>
+        <destinationName>verbatimscientificname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Verbatim Scientific Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>typifiedName</sourceName>
+        <destinationName>typifiedname</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Typified Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>protocol</sourceName>
+        <destinationName>protocol</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Protocol</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lastParsed</sourceName>
+        <destinationName>lastparsed</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Last Parsed</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lastCrawled</sourceName>
+        <destinationName>lastcrawled</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Last Crawled</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>isInvasive</sourceName>
+        <destinationName>isinvasive</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Is Invasive</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>repatriated</sourceName>
+        <destinationName>repatriated</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Repatriated</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>relativeOrganismQuantity</sourceName>
+        <destinationName>relativeorganismquantity</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Relative Organism Quantity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>projectId</sourceName>
+        <destinationName>projectid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Project Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>isSequenced</sourceName>
+        <destinationName>issequenced</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Is Sequenced</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>gbifRegion</sourceName>
+        <destinationName>gbifregion</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Gbif Region</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>publishedByGbifRegion</sourceName>
+        <destinationName>publishedbygbifregion</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Published By Gbif Region</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level0Gid</sourceName>
+        <destinationName>level0gid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level0 Gid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level0Name</sourceName>
+        <destinationName>level0name</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level0 Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level1Gid</sourceName>
+        <destinationName>level1gid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level1 Gid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level1Name</sourceName>
+        <destinationName>level1name</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level1 Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level2Gid</sourceName>
+        <destinationName>level2gid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level2 Gid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level2Name</sourceName>
+        <destinationName>level2name</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level2 Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level3Gid</sourceName>
+        <destinationName>level3gid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level3 Gid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>level3Name</sourceName>
+        <destinationName>level3name</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Level3 Name</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>iucnRedListCategory</sourceName>
+        <destinationName>iucnredlistcategory</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Iucn Red List Category</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dna_derived</sourceName>
+        <destinationName>dna_derived</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Dna Derived</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>has_mof</sourceName>
+        <destinationName>has_mof</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Has Mof</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dataset_id</sourceName>
+        <destinationName>dataset_id</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Dataset Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>aphiaid</sourceName>
+        <destinationName>aphiaid</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Aphiaid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>areas</sourceName>
+        <destinationName>areas</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Areas</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>associatedMedia</sourceName>
+        <destinationName>associatedmedia</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Associated Media</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>bathymetry</sourceName>
+        <destinationName>bathymetry</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Bathymetry</att>
+            <att name="long_name">Bathymetry</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>brackish</sourceName>
+        <destinationName>brackish</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Brackish</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>classid</sourceName>
+        <destinationName>classid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Classid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>country</sourceName>
+        <destinationName>country</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Country</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>date_end</sourceName>
+        <destinationName>date_end</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date End</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>date_mid</sourceName>
+        <destinationName>date_mid</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date Mid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>date_start</sourceName>
+        <destinationName>date_start</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date Start</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>date_year</sourceName>
+        <destinationName>date_year</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>division</sourceName>
+        <destinationName>division</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Division</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>divisionid</sourceName>
+        <destinationName>divisionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Divisionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>domain</sourceName>
+        <destinationName>domain</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Domain</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>domainid</sourceName>
+        <destinationName>domainid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Domainid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>familyid</sourceName>
+        <destinationName>familyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Familyid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>forma</sourceName>
+        <destinationName>forma</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Forma</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>formaid</sourceName>
+        <destinationName>formaid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Formaid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>genusid</sourceName>
+        <destinationName>genusid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Genusid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>geodeticDatum</sourceName>
+        <destinationName>geodeticdatum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Geodetic Datum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>gigaclass</sourceName>
+        <destinationName>gigaclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Gigaclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>gigaclassid</sourceName>
+        <destinationName>gigaclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Gigaclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>hab</sourceName>
+        <destinationName>hab</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Hab</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraclass</sourceName>
+        <destinationName>infraclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infraclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraclassid</sourceName>
+        <destinationName>infraclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infraclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infrakingdom</sourceName>
+        <destinationName>infrakingdom</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infrakingdom</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infrakingdomid</sourceName>
+        <destinationName>infrakingdomid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Infrakingdomid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraorder</sourceName>
+        <destinationName>infraorder</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Infraorder</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraorderid</sourceName>
+        <destinationName>infraorderid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Infraorderid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraphylum</sourceName>
+        <destinationName>infraphylum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Infraphylum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>infraphylumid</sourceName>
+        <destinationName>infraphylumid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Infraphylumid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>kingdomid</sourceName>
+        <destinationName>kingdomid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Kingdomid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>marine</sourceName>
+        <destinationName>marine</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Marine</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>maximumDepthInMeters</sourceName>
+        <destinationName>maximumdepthinmeters</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Maximum Depth In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>maximumElevationInMeters</sourceName>
+        <destinationName>maximumelevationinmeters</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Maximum Elevation In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>megaclass</sourceName>
+        <destinationName>megaclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Megaclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>megaclassid</sourceName>
+        <destinationName>megaclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Megaclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>minimumDepthInMeters</sourceName>
+        <destinationName>minimumdepthinmeters</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Minimum Depth In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>minimumElevationInMeters</sourceName>
+        <destinationName>minimumelevationinmeters</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Minimum Elevation In Meters</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>orderid</sourceName>
+        <destinationName>orderid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Orderid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parvorder</sourceName>
+        <destinationName>parvorder</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Parvorder</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parvorderid</sourceName>
+        <destinationName>parvorderid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Parvorderid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parvphylum</sourceName>
+        <destinationName>parvphylum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Parvphylum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>parvphylumid</sourceName>
+        <destinationName>parvphylumid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Parvphylumid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>phylum_division</sourceName>
+        <destinationName>phylum_division</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Phylum Division</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>phylum_divisionid</sourceName>
+        <destinationName>phylum_divisionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Phylum Divisionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>phylumid</sourceName>
+        <destinationName>phylumid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Phylumid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>scientificNameAuthorship</sourceName>
+        <destinationName>scientificnameauthorship</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Scientific Name Authorship</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>section</sourceName>
+        <destinationName>section</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Section</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sectionid</sourceName>
+        <destinationName>sectionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sectionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>shoredistance</sourceName>
+        <destinationName>shoredistance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Shoredistance</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>speciesid</sourceName>
+        <destinationName>speciesid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Speciesid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sss</sourceName>
+        <destinationName>sss</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">SSS</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sst</sourceName>
+        <destinationName>sst</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subclass</sourceName>
+        <destinationName>subclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subclassid</sourceName>
+        <destinationName>subclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subdivision</sourceName>
+        <destinationName>subdivision</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Subdivision</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subdivisionid</sourceName>
+        <destinationName>subdivisionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Subdivisionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subfamilyid</sourceName>
+        <destinationName>subfamilyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subfamilyid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subforma</sourceName>
+        <destinationName>subforma</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subforma</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subformaid</sourceName>
+        <destinationName>subformaid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subformaid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subgenusid</sourceName>
+        <destinationName>subgenusid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subgenusid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subkingdom</sourceName>
+        <destinationName>subkingdom</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subkingdom</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subkingdomid</sourceName>
+        <destinationName>subkingdomid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subkingdomid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>suborder</sourceName>
+        <destinationName>suborder</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Suborder</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>suborderid</sourceName>
+        <destinationName>suborderid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Suborderid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subphylum</sourceName>
+        <destinationName>subphylum</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subphylum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subphylum_subdivision</sourceName>
+        <destinationName>subphylum_subdivision</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Subphylum Subdivision</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subphylum_subdivisionid</sourceName>
+        <destinationName>subphylum_subdivisionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Meteorology</att>
+            <att name="long_name">Subphylum Subdivisionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subphylumid</sourceName>
+        <destinationName>subphylumid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subphylumid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subsection</sourceName>
+        <destinationName>subsection</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subsection</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subsectionid</sourceName>
+        <destinationName>subsectionid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subsectionid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subspecies</sourceName>
+        <destinationName>subspecies</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subspecies</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subspeciesid</sourceName>
+        <destinationName>subspeciesid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Subspeciesid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subterclass</sourceName>
+        <destinationName>subterclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subterclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subterclassid</sourceName>
+        <destinationName>subterclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subterclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subtribeid</sourceName>
+        <destinationName>subtribeid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subtribeid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subvariety</sourceName>
+        <destinationName>subvariety</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subvariety</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>subvarietyid</sourceName>
+        <destinationName>subvarietyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Subvarietyid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superclass</sourceName>
+        <destinationName>superclass</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Superclass</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superclassid</sourceName>
+        <destinationName>superclassid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Superclassid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superdomain</sourceName>
+        <destinationName>superdomain</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Superdomain</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superdomainid</sourceName>
+        <destinationName>superdomainid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Superdomainid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superorder</sourceName>
+        <destinationName>superorder</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Superorder</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>superorderid</sourceName>
+        <destinationName>superorderid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Taxonomy</att>
+            <att name="long_name">Superorderid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>supertribe</sourceName>
+        <destinationName>supertribe</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Supertribe</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>supertribeid</sourceName>
+        <destinationName>supertribeid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Supertribeid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>tribeid</sourceName>
+        <destinationName>tribeid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Tribeid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>unaccepted</sourceName>
+        <destinationName>unaccepted</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Unaccepted</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>variety</sourceName>
+        <destinationName>variety</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Variety</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>varietyid</sourceName>
+        <destinationName>varietyid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Varietyid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimCoordinates</sourceName>
+        <destinationName>verbatimcoordinates</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Verbatim Coordinates</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimLatitude</sourceName>
+        <destinationName>verbatimlatitude</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>verbatimLongitude</sourceName>
+        <destinationName>verbatimlongitude</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wrims</sourceName>
+        <destinationName>wrims</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Wrims</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>missing</sourceName>
+        <destinationName>missing</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Missing</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>invalid</sourceName>
+        <destinationName>invalid</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Invalid</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>flags</sourceName>
+        <destinationName>flags</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Flags</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>dropped</sourceName>
+        <destinationName>dropped</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Dropped</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>absence</sourceName>
+        <destinationName>absence</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Absence</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>geometry</sourceName>
+        <destinationName>geometry</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Geometry</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
