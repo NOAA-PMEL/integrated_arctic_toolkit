@@ -8,6 +8,19 @@
 # =====================================================================
 
 # ---------------------------------------------------------------------
+# LOAD ENVIRONMENT VARIABLES
+# ---------------------------------------------------------------------
+ENV_FILE="/home/users/zalmanek/integrated_arctic_toolkit/.env"
+# Reads .env file and exports variables
+if [ -f "$ENV_FILE" ]; then
+    # This reads the file, ignores comments, and exports the variables
+    export $(grep -v '^#' "$ENV_FILE" | xargs)
+else
+    echo "ERROR: .env file not found at $ENV_FILE"
+    exit 1
+fi
+
+# ---------------------------------------------------------------------
 # CONFIGURATION VARIABLES
 # ---------------------------------------------------------------------
 export JAVA_HOME=/home/users/zalmanek/java/jdk-25.0.2+10
@@ -29,11 +42,11 @@ ERDDAP_FUNCTION="EDDTableFromDatabase"
 
 # --- DATABASE SPECIFIC ANSWERS (The 13+ Prompts) ---
 # 2. Connection URL
-DB_URL="jdbc:postgresql://localhost:5432/arctic_toolkit_test"
+DB_URL="$DATABASE_URL_ERDDAP"
 # 3. Driver Name
 DB_DRIVER="org.postgresql.Driver"
 # 4. Connection Properties (usually blank)
-DB_PROPS="user|erddap|password|pass"
+DB_PROPS="user|$DB_USER|password|$DB_PASS"
 # 5. Catalog Name (Database name)
 DB_CATALOG="arctic_toolkit_test"
 # 6. Schema Name
