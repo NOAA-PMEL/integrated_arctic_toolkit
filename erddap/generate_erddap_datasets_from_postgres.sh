@@ -3,6 +3,8 @@
 # ERDDAP Datasets.xml Generator Script - POSTGRES VERSION
 # =====================================================================
 # This script runs ERDDAP's GenerateDatasets.xml utility for PostgreSQL
+# NOTE: Need to run for each table desired; change DB_TABLE for each one
+# that will be needed.
 # =====================================================================
 
 # ---------------------------------------------------------------------
@@ -31,13 +33,13 @@ DB_URL="jdbc:postgresql://localhost:5432/arctic_toolkit_test"
 # 3. Driver Name
 DB_DRIVER="org.postgresql.Driver"
 # 4. Connection Properties (usually blank)
-DB_PROPS="user|erddap|password|butterfly321"
+DB_PROPS="user|erddap|password|pass"
 # 5. Catalog Name (Database name)
 DB_CATALOG="arctic_toolkit_test"
 # 6. Schema Name
 DB_SCHEMA="public"
 # 7. Table Name (use .* for all tables)
-DB_TABLE="occurrence"
+DB_TABLE="mof"
 # 8. OrderBy (e.g., "time")
 DB_ORDER=""
 # 9. ReloadEveryMinutes - 1 week = 10,080
