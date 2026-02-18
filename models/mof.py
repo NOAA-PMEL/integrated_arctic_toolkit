@@ -1,7 +1,7 @@
 from typing import Optional
 from sqlalchemy import Integer, String, Text, PrimaryKeyConstraint, ForeignKeyConstraint
 from sqlalchemy.orm import relationship, Mapped, mapped_column
-from models.occurrence import Occurrence
+# from models.occurrence import Occurrence
 from database import Base
 
 

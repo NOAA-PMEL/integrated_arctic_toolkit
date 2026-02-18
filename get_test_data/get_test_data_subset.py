@@ -55,7 +55,7 @@ class CreateTestData:
 
     def get_occ_subset_with_dna_and_mof(self) -> list:
         """
-        Get a subset dataframe (200 rows) of the occurrence records 
+        Get a subset dataframe (5000 rows) of the occurrence records 
         (from the occurrence parquet file) that have both measurement 
         of fact and dna derived records. This method returns a list of the 
         occurrence ids for the test df.
@@ -91,7 +91,7 @@ class CreateTestData:
                 samples.append(df_random_sample)
                 rows_found += sample_size
 
-                if rows_found >= 1000:
+                if rows_found >= 5000:
                     break
 
         if samples:

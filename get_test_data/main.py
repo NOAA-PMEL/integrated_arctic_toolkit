@@ -1,4 +1,4 @@
-from arctic_postgres.get_test_data.get_test_data_subset import CreateTestData
+from integrated_arctic_toolkit.get_test_data.get_test_data_subset import CreateTestData
 import pyarrow.parquet as pq
 
 # For GBIF:
@@ -9,7 +9,7 @@ gbif_test_data_creator = CreateTestData(
     occ_occurrence_id_col_name='source_id',
     dna_derived_occurrence_id_col_name='occurrence_source_id',
     mof_occurrence_id_col_name='occurrence_source_id',
-    data_output_dir='/home/users/zalmanek/arctic_postgres/get_test_data/test_data/gbif_test_data',
+    data_output_dir='/home/users/zalmanek/integrated_arctic_toolkit/get_test_data/test_data/gbif_test_data',
 )
 
 
@@ -28,5 +28,5 @@ obis_test_data_creator = CreateTestData(
     occ_occurrence_id_col_name='source_id',
     dna_derived_occurrence_id_col_name='occurrence_source_id',
     mof_occurrence_id_col_name='occurrence_source_id',
-    data_output_dir='/home/users/zalmanek/arctic_postgres/get_test_data/test_data/obis_test_data',
+    data_output_dir='/home/users/zalmanek/integrated_arctic_toolkit/get_test_data/test_data/obis_test_data',
 )

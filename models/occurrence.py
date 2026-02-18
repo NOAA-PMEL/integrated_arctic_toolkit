@@ -1,5 +1,6 @@
-from sqlalchemy import Integer, String, Float, DateTime, Text, PrimaryKeyConstraint, BigInteger
+from sqlalchemy import Integer, String, Float, DateTime, Text, PrimaryKeyConstraint, BigInteger, Index
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from geoalchemy2 import Geography
 from datetime import datetime
 from typing import Optional
 from database import Base
@@ -11,6 +12,11 @@ class Occurrence(Base):
 
    data_source: Mapped[str] = mapped_column(String(4), primary_key=True)
    source_id: Mapped[str] = mapped_column(String(50), primary_key=True)
+
+   # spatial
+   location: Mapped[Optional[Geography]] = mapped_column(Geography(geometry_type='POINT', srid=4326, use_typmod=True))
+   decimalLatitude: Mapped[Optional[float]] = mapped_column(Float)
+   decimalLongitude: Mapped[Optional[float]] = mapped_column(Float)
 
    accessRights: Mapped[Optional[str]] = mapped_column(Text)
    bibliographicCitation: Mapped[Optional[str]] = mapped_column(Text)
@@ -110,8 +116,6 @@ class Occurrence(Base):
    maximumDistanceAboveSurfaceInMeters: Mapped[Optional[str]] = mapped_column(Text)
    locationAccordingTo: Mapped[Optional[str]] = mapped_column(Text)
    locationRemarks: Mapped[Optional[str]] = mapped_column(Text)
-   decimalLatitude: Mapped[Optional[float]] = mapped_column(Float)
-   decimalLongitude: Mapped[Optional[float]] = mapped_column(Float)
    coordinateUncertaintyInMeters: Mapped[Optional[float]] = mapped_column(Float)
    coordinatePrecision: Mapped[Optional[float]] = mapped_column(Float)
    pointRadiusSpatialFit: Mapped[Optional[str]] = mapped_column(Text)
@@ -350,4 +354,9 @@ class Occurrence(Base):
 
    __table_args__ = (
       PrimaryKeyConstraint('data_source', 'source_id', name='occurrence_pkey'),
+      Index('idx_occurrence_location', 'location', postgresql_using='gist'),
+      Index('idx_occurrence_min_depth', 'minimumDepthInMeters'),
+      Index('idx_occurrence_max_depth', 'maximumDepthInMeters'),
+      Index('idx_occurrence_time_start', 'startEventDate'),
+      Index('idx_occurrence_time_end', 'endEventDate')
       )

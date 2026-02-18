@@ -7,6 +7,9 @@ import os
 import pyarrow.parquet as pq
 import polars as pl
 import io
+from models.dna_derived import DnaDerived # Need to import models explictly for table dropping at beginning of script to work!
+from models.mof import MeasurementOfFact
+from models.occurrence import Occurrence
 
 BATCH_SIZE = 100000
 
@@ -53,7 +56,7 @@ INT_COLUMNS = ['aphiaid',
 # COLUMNS_TO_DROP = ['geometry'] # a binary column and I think added in because of my q
 
 def create_the_tables(): 
-    # Base.metadata.drop_all(bind=engine)
+    Base.metadata.drop_all(bind=engine)
     create_tables()
     print("Tables created!")
 
@@ -124,6 +127,10 @@ def transorm_df(df: pl):
             pl.col(c).cast(pl.Int64, strict=False) for c in int_cols
         ])
 
+    # 9 add location column (for geospatial bounding box)
+    if 'decimalLatitude' in df.columns and 'decimalLongitude' in df.columns:
+        df = create_location_col(df=df)
+
     return df
 
 def split_dwc_event_date(df: pl.DataFrame) -> pl.DataFrame:
@@ -157,6 +164,27 @@ def split_dwc_event_date(df: pl.DataFrame) -> pl.DataFrame:
         )
         .drop(["start_raw", "end_raw"])
     )
+
+def create_location_col(df: pl.DataFrame) -> pl.DataFrame:
+    """Creates the location column defined in teh SQL alchemy model.
+    This is what will allow bounding box querying
+    """
+    df = df.with_columns(
+        pl.when(
+            pl.col('decimalLongitude').is_not_null() & 
+            pl.col('decimalLatitude').is_not_nan()
+        )
+        .then(
+            pl.format(
+                'SRID=4326;POINT({} {})',
+                pl.col('decimalLongitude'),
+                pl.col('decimalLatitude')
+            )
+        )
+        .otherwise(None)
+        .alias('location')
+    )
+    return df
 
 def load_parquet_streaming(file_path, table_name):
     """
