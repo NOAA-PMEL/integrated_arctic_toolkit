@@ -1,5 +1,4 @@
 from sqlalchemy import Integer, BigInteger, String, Float, Text, PrimaryKeyConstraint, ForeignKeyConstraint
-# from models.occurrence import Occurrence
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from typing import Optional
 from database import Base

@@ -14,7 +14,7 @@ class Occurrence(Base):
    source_id: Mapped[str] = mapped_column(String(50), primary_key=True)
 
    # spatial
-   location: Mapped[Optional[Geography]] = mapped_column(Geography(geometry_type='POINT', srid=4326, use_typmod=True))
+   location: Mapped[Optional[Geography]] = mapped_column(Geography(geometry_type='POINT', srid=4326, use_typmod=True)) # index automatically created for geography
    decimalLatitude: Mapped[Optional[float]] = mapped_column(Float)
    decimalLongitude: Mapped[Optional[float]] = mapped_column(Float)
 
@@ -354,7 +354,6 @@ class Occurrence(Base):
 
    __table_args__ = (
       PrimaryKeyConstraint('data_source', 'source_id', name='occurrence_pkey'),
-      Index('idx_occurrence_location', 'location', postgresql_using='gist'),
       Index('idx_occurrence_min_depth', 'minimumDepthInMeters'),
       Index('idx_occurrence_max_depth', 'maximumDepthInMeters'),
       Index('idx_occurrence_time_start', 'startEventDate'),

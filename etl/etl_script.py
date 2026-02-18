@@ -1,5 +1,5 @@
 from database import engine, Base
-from models import create_tables, mof, dna_derived, occurrence
+from models import create_tables, DnaDerived, MeasurementOfFact, Occurrence
 from dotenv import load_dotenv
 from align_schema.schema_aligner import DwcSchemaAligner
 from sqlalchemy import text
@@ -7,9 +7,6 @@ import os
 import pyarrow.parquet as pq
 import polars as pl
 import io
-from models.dna_derived import DnaDerived # Need to import models explictly for table dropping at beginning of script to work!
-from models.mof import MeasurementOfFact
-from models.occurrence import Occurrence
 
 BATCH_SIZE = 100000
 
@@ -57,6 +54,8 @@ INT_COLUMNS = ['aphiaid',
 
 def create_the_tables(): 
     Base.metadata.drop_all(bind=engine)
+    # print(Base.metadata.tables.keys())
+    # print([str(i) for t in Base.metadata.tables.values() for i in t.indexes])
     create_tables()
     print("Tables created!")
 
@@ -172,7 +171,7 @@ def create_location_col(df: pl.DataFrame) -> pl.DataFrame:
     df = df.with_columns(
         pl.when(
             pl.col('decimalLongitude').is_not_null() & 
-            pl.col('decimalLatitude').is_not_nan()
+            pl.col('decimalLatitude').is_not_null()
         )
         .then(
             pl.format(

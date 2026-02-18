@@ -1,333 +1,333 @@
 ,gbif_column,obis_column,normalized_name,match_type,similarity,differences
-2,language,language,language,exact,1.0,none
-3,has_mof,has_mof,hasmof,exact,1.0,none
-4,stateProvince,stateProvince,stateprovince,exact,1.0,none
-5,acceptedNameUsage,acceptedNameUsage,acceptednameusage,exact,1.0,none
-6,subtribe,subtribe,subtribe,exact,1.0,none
-7,latestEraOrHighestErathem,latestEraOrHighestErathem,latesteraorhighesterathem,exact,1.0,none
-8,rightsHolder,rightsHolder,rightsholder,exact,1.0,none
-9,samplingProtocol,samplingProtocol,samplingprotocol,exact,1.0,none
-10,latestEonOrHighestEonothem,latestEonOrHighestEonothem,latesteonorhighesteonothem,exact,1.0,none
-11,municipality,municipality,municipality,exact,1.0,none
-12,footprintWKT,footprintWKT,footprintwkt,exact,1.0,none
-13,identificationReferences,identificationReferences,identificationreferences,exact,1.0,none
-14,namePublishedInYear,namePublishedInYear,namepublishedinyear,exact,1.0,none
-15,institutionCode,institutionCode,institutioncode,exact,1.0,none
-16,taxonRank,taxonRank,taxonrank,exact,1.0,none
-17,georeferencedDate,georeferencedDate,georeferenceddate,exact,1.0,none
-18,organismID,organismID,organismid,exact,1.0,none
-19,taxonomicStatus,taxonomicStatus,taxonomicstatus,exact,1.0,none
-20,eventID,eventID,eventid,exact,1.0,none
-21,year,year,year,exact,1.0,none
-22,taxonID,taxonID,taxonid,exact,1.0,none
-23,collectionID,collectionID,collectionid,exact,1.0,none
-24,countryCode,countryCode,countrycode,exact,1.0,none
-25,source_id,source_id,sourceid,exact,1.0,none
-26,acceptedNameUsageID,acceptedNameUsageID,acceptednameusageid,exact,1.0,none
-27,namePublishedIn,namePublishedIn,namepublishedin,exact,1.0,none
-28,bed,bed,bed,exact,1.0,none
-29,month,month,month,exact,1.0,none
-30,datasetID,datasetID,datasetid,exact,1.0,none
-31,superfamily,superfamily,superfamily,exact,1.0,none
-32,occurrenceStatus,occurrenceStatus,occurrencestatus,exact,1.0,none
-33,establishmentMeans,establishmentMeans,establishmentmeans,exact,1.0,none
-34,degreeOfEstablishment,degreeOfEstablishment,degreeofestablishment,exact,1.0,none
-35,verticalDatum,verticalDatum,verticaldatum,exact,1.0,none
-36,pathway,pathway,pathway,exact,1.0,none
-37,coordinatePrecision,coordinatePrecision,coordinateprecision,exact,1.0,none
-38,samplingEffort,samplingEffort,samplingeffort,exact,1.0,none
-39,islandGroup,islandGroup,islandgroup,exact,1.0,none
-40,locationRemarks,locationRemarks,locationremarks,exact,1.0,none
-41,member,member,member,exact,1.0,none
-42,earliestEonOrLowestEonothem,earliestEonOrLowestEonothem,earliesteonorlowesteonothem,exact,1.0,none
-43,earliestEpochOrLowestSeries,earliestEpochOrLowestSeries,earliestepochorlowestseries,exact,1.0,none
-44,parentNameUsageID,parentNameUsageID,parentnameusageid,exact,1.0,none
-45,dateIdentified,dateIdentified,dateidentified,exact,1.0,none
-46,associatedOrganisms,associatedOrganisms,associatedorganisms,exact,1.0,none
-47,verbatimLabel,verbatimLabel,verbatimlabel,exact,1.0,none
-48,depth,depth,depth,exact,1.0,none
-49,caste,caste,caste,exact,1.0,none
-50,scientificName,scientificName,scientificname,exact,1.0,none
-51,sampleSizeUnit,sampleSizeUnit,samplesizeunit,exact,1.0,none
-52,group,group,group,exact,1.0,none
-53,latestPeriodOrHighestSystem,latestPeriodOrHighestSystem,latestperiodorhighestsystem,exact,1.0,none
-54,earliestEraOrLowestErathem,earliestEraOrLowestErathem,earliesteraorlowesterathem,exact,1.0,none
-55,recordedBy,recordedBy,recordedby,exact,1.0,none
-56,informationWithheld,informationWithheld,informationwithheld,exact,1.0,none
-57,institutionID,institutionID,institutionid,exact,1.0,none
-58,nameAccordingTo,nameAccordingTo,nameaccordingto,exact,1.0,none
-59,tribe,tribe,tribe,exact,1.0,none
-60,nomenclaturalCode,nomenclaturalCode,nomenclaturalcode,exact,1.0,none
-61,identificationQualifier,identificationQualifier,identificationqualifier,exact,1.0,none
-62,day,day,day,exact,1.0,none
-63,identificationID,identificationID,identificationid,exact,1.0,none
-64,previousIdentifications,previousIdentifications,previousidentifications,exact,1.0,none
-65,individualCount,individualCount,individualcount,exact,1.0,none
-66,catalogNumber,catalogNumber,catalognumber,exact,1.0,none
-67,associatedSequences,associatedSequences,associatedsequences,exact,1.0,none
-68,organismName,organismName,organismname,exact,1.0,none
-69,accessRights,accessRights,accessrights,exact,1.0,none
-70,fieldNumber,fieldNumber,fieldnumber,exact,1.0,none
-71,family,family,family,exact,1.0,none
-72,data_source,data_source,datasource,exact,1.0,none
-73,footprintSpatialFit,footprintSpatialFit,footprintspatialfit,exact,1.0,none
-74,modified,modified,modified,exact,1.0,none
-75,materialEntityRemarks,materialEntityRemarks,materialentityremarks,exact,1.0,none
-76,associatedOccurrences,associatedOccurrences,associatedoccurrences,exact,1.0,none
-77,species,species,species,exact,1.0,none
-78,disposition,disposition,disposition,exact,1.0,none
-79,sex,sex,sex,exact,1.0,none
-80,subgenus,subgenus,subgenus,exact,1.0,none
-81,lifeStage,lifeStage,lifestage,exact,1.0,none
-82,associatedTaxa,associatedTaxa,associatedtaxa,exact,1.0,none
-83,scientificNameID,scientificNameID,scientificnameid,exact,1.0,none
-84,maximumDistanceAboveSurfaceInMeters,maximumDistanceAboveSurfaceInMeters,maximumdistanceabovesurfaceinmeters,exact,1.0,none
-85,subfamily,subfamily,subfamily,exact,1.0,none
-86,recordedByID,recordedByID,recordedbyid,exact,1.0,none
-87,latestAgeOrHighestStage,latestAgeOrHighestStage,latestageorhigheststage,exact,1.0,none
-88,organismQuantityType,organismQuantityType,organismquantitytype,exact,1.0,none
-89,minimumDistanceAboveSurfaceInMeters,minimumDistanceAboveSurfaceInMeters,minimumdistanceabovesurfaceinmeters,exact,1.0,none
-90,identifiedByID,identifiedByID,identifiedbyid,exact,1.0,none
-91,eventTime,eventTime,eventtime,exact,1.0,none
-92,eventDate,eventDate,eventdate,exact,1.0,none
-93,ownerInstitutionCode,ownerInstitutionCode,ownerinstitutioncode,exact,1.0,none
-94,decimalLongitude,decimalLongitude,decimallongitude,exact,1.0,none
-95,latestEpochOrHighestSeries,latestEpochOrHighestSeries,latestepochorhighestseries,exact,1.0,none
-96,preparations,preparations,preparations,exact,1.0,none
-97,locationAccordingTo,locationAccordingTo,locationaccordingto,exact,1.0,none
-98,earliestPeriodOrLowestSystem,earliestPeriodOrLowestSystem,earliestperiodorlowestsystem,exact,1.0,none
-99,genus,genus,genus,exact,1.0,none
-100,parentNameUsage,parentNameUsage,parentnameusage,exact,1.0,none
-101,verbatimDepth,verbatimDepth,verbatimdepth,exact,1.0,none
-102,identificationRemarks,identificationRemarks,identificationremarks,exact,1.0,none
-103,endDayOfYear,endDayOfYear,enddayofyear,exact,1.0,none
-104,pointRadiusSpatialFit,pointRadiusSpatialFit,pointradiusspatialfit,exact,1.0,none
-105,originalNameUsageID,originalNameUsageID,originalnameusageid,exact,1.0,none
-106,locality,locality,locality,exact,1.0,none
-107,higherGeography,higherGeography,highergeography,exact,1.0,none
-108,verbatimEventDate,verbatimEventDate,verbatimeventdate,exact,1.0,none
-109,taxonRemarks,taxonRemarks,taxonremarks,exact,1.0,none
-110,county,county,county,exact,1.0,none
-111,order,order,order,exact,1.0,none
-112,cultivarEpithet,cultivarEpithet,cultivarepithet,exact,1.0,none
-113,bibliographicCitation,bibliographicCitation,bibliographiccitation,exact,1.0,none
-114,behavior,behavior,behavior,exact,1.0,none
-115,associatedReferences,associatedReferences,associatedreferences,exact,1.0,none
-116,eventType,eventType,eventtype,exact,1.0,none
-117,organismRemarks,organismRemarks,organismremarks,exact,1.0,none
-118,occurrenceRemarks,occurrenceRemarks,occurrenceremarks,exact,1.0,none
-119,verbatimCoordinateSystem,verbatimCoordinateSystem,verbatimcoordinatesystem,exact,1.0,none
-120,waterBody,waterBody,waterbody,exact,1.0,none
-121,taxonConceptID,taxonConceptID,taxonconceptid,exact,1.0,none
-122,originalNameUsage,originalNameUsage,originalnameusage,exact,1.0,none
-123,geologicalContextID,geologicalContextID,geologicalcontextid,exact,1.0,none
-124,fieldNotes,fieldNotes,fieldnotes,exact,1.0,none
-125,decimalLatitude,decimalLatitude,decimallatitude,exact,1.0,none
-126,datasetName,datasetName,datasetname,exact,1.0,none
-127,organismScope,organismScope,organismscope,exact,1.0,none
-128,dynamicProperties,dynamicProperties,dynamicproperties,exact,1.0,none
-129,kingdom,kingdom,kingdom,exact,1.0,none
-130,organismQuantity,organismQuantity,organismquantity,exact,1.0,none
-131,verbatimSRS,verbatimSRS,verbatimsrs,exact,1.0,none
-132,footprintSRS,footprintSRS,footprintsrs,exact,1.0,none
-133,infragenericEpithet,infragenericEpithet,infragenericepithet,exact,1.0,none
-134,identifiedBy,identifiedBy,identifiedby,exact,1.0,none
-135,type,type,type,exact,1.0,none
-136,parentEventID,parentEventID,parenteventid,exact,1.0,none
-137,earliestAgeOrLowestStage,earliestAgeOrLowestStage,earliestageorloweststage,exact,1.0,none
-138,nameAccordingToID,nameAccordingToID,nameaccordingtoid,exact,1.0,none
-139,georeferenceVerificationStatus,georeferenceVerificationStatus,georeferenceverificationstatus,exact,1.0,none
-140,island,island,island,exact,1.0,none
-141,specificEpithet,specificEpithet,specificepithet,exact,1.0,none
-142,verbatimLocality,verbatimLocality,verbatimlocality,exact,1.0,none
-143,habitat,habitat,habitat,exact,1.0,none
-144,verbatimIdentification,verbatimIdentification,verbatimidentification,exact,1.0,none
-145,higherClassification,higherClassification,higherclassification,exact,1.0,none
-146,lowestBiostratigraphicZone,lowestBiostratigraphicZone,lowestbiostratigraphiczone,exact,1.0,none
-147,typeStatus,typeStatus,typestatus,exact,1.0,none
-148,verbatimElevation,verbatimElevation,verbatimelevation,exact,1.0,none
-149,locationID,locationID,locationid,exact,1.0,none
-150,georeferenceProtocol,georeferenceProtocol,georeferenceprotocol,exact,1.0,none
-151,materialEntityID,materialEntityID,materialentityid,exact,1.0,none
-152,higherGeographyID,higherGeographyID,highergeographyid,exact,1.0,none
-153,identificationVerificationStatus,identificationVerificationStatus,identificationverificationstatus,exact,1.0,none
-154,references,references,references,exact,1.0,none
-155,startDayOfYear,startDayOfYear,startdayofyear,exact,1.0,none
-156,nomenclaturalStatus,nomenclaturalStatus,nomenclaturalstatus,exact,1.0,none
-157,collectionCode,collectionCode,collectioncode,exact,1.0,none
-158,license,license,license,exact,1.0,none
-159,otherCatalogNumbers,otherCatalogNumbers,othercatalognumbers,exact,1.0,none
-160,sampleSizeValue,sampleSizeValue,samplesizevalue,exact,1.0,none
-161,basisOfRecord,basisOfRecord,basisofrecord,exact,1.0,none
-162,georeferencedBy,georeferencedBy,georeferencedby,exact,1.0,none
-163,highestBiostratigraphicZone,highestBiostratigraphicZone,highestbiostratigraphiczone,exact,1.0,none
-164,eventRemarks,eventRemarks,eventremarks,exact,1.0,none
-165,phylum,phylum,phylum,exact,1.0,none
-166,reproductiveCondition,reproductiveCondition,reproductivecondition,exact,1.0,none
-167,dataGeneralizations,dataGeneralizations,datageneralizations,exact,1.0,none
-168,genericName,genericName,genericname,exact,1.0,none
-169,vernacularName,vernacularName,vernacularname,exact,1.0,none
-170,lithostratigraphicTerms,lithostratigraphicTerms,lithostratigraphicterms,exact,1.0,none
-171,georeferenceRemarks,georeferenceRemarks,georeferenceremarks,exact,1.0,none
-172,continent,continent,continent,exact,1.0,none
-173,infraspecificEpithet,infraspecificEpithet,infraspecificepithet,exact,1.0,none
-174,coordinateUncertaintyInMeters,coordinateUncertaintyInMeters,coordinateuncertaintyinmeters,exact,1.0,none
-175,dna_derived,dna_derived,dnaderived,exact,1.0,none
-176,occurrenceID,occurrenceID,occurrenceid,exact,1.0,none
-177,vitality,vitality,vitality,exact,1.0,none
-178,materialSampleID,materialSampleID,materialsampleid,exact,1.0,none
-179,georeferenceSources,georeferenceSources,georeferencesources,exact,1.0,none
-180,class,class,class,exact,1.0,none
-181,namePublishedInID,namePublishedInID,namepublishedinid,exact,1.0,none
-182,formation,formation,formation,exact,1.0,none
-183,verbatimTaxonRank,verbatimTaxonRank,verbatimtaxonrank,exact,1.0,none
-184,recordNumber,recordNumber,recordnumber,exact,1.0,none
-1,iucnRedListCategory,redlist_category,iucnredlistcategory,fuzzy,0.8823529411764706,GBIF: 'iucnRedListCategory' vs OBIS: 'redlist_category'
-0,superfamilyKey,superfamilyid,superfamilykey,fuzzy,0.8148148148148148,GBIF: 'superfamilyKey' vs OBIS: 'superfamilyid'
-185,level1Name,,level1name,gbif_only,,only in GBIF
-186,relativeOrganismQuantity,,relativeorganismquantity,gbif_only,,only in GBIF
-187,typifiedName,,typifiedname,gbif_only,,only in GBIF
-188,level2Gid,,level2gid,gbif_only,,only in GBIF
-189,hasGeospatialIssues,,hasgeospatialissues,gbif_only,,only in GBIF
-190,mediaType,,mediatype,gbif_only,,only in GBIF
-191,acceptedTaxonKey,,acceptedtaxonkey,gbif_only,,only in GBIF
-192,genusKey,,genuskey,gbif_only,,only in GBIF
-193,level3Gid,,level3gid,gbif_only,,only in GBIF
-194,depthAccuracy,,depthaccuracy,gbif_only,,only in GBIF
-195,isInvasive,,isinvasive,gbif_only,,only in GBIF
-196,gbifRegion,,gbifregion,gbif_only,,only in GBIF
-197,tribeKey,,tribekey,gbif_only,,only in GBIF
-198,level0Name,,level0name,gbif_only,,only in GBIF
-199,hasCoordinate,,hascoordinate,gbif_only,,only in GBIF
-200,familyKey,,familykey,gbif_only,,only in GBIF
-201,publishedByGbifRegion,,publishedbygbifregion,gbif_only,,only in GBIF
-202,isSequenced,,issequenced,gbif_only,,only in GBIF
-203,phylumKey,,phylumkey,gbif_only,,only in GBIF
-204,repatriated,,repatriated,gbif_only,,only in GBIF
-205,classKey,,classkey,gbif_only,,only in GBIF
-206,lastInterpreted,,lastinterpreted,gbif_only,,only in GBIF
-207,subgenusKey,,subgenuskey,gbif_only,,only in GBIF
-208,elevation,,elevation,gbif_only,,only in GBIF
-209,level1Gid,,level1gid,gbif_only,,only in GBIF
-210,lastCrawled,,lastcrawled,gbif_only,,only in GBIF
-211,kingdomKey,,kingdomkey,gbif_only,,only in GBIF
-212,speciesKey,,specieskey,gbif_only,,only in GBIF
-213,publishingCountry,,publishingcountry,gbif_only,,only in GBIF
-214,lastParsed,,lastparsed,gbif_only,,only in GBIF
-215,level3Name,,level3name,gbif_only,,only in GBIF
-216,level0Gid,,level0gid,gbif_only,,only in GBIF
-217,taxonomicIssue,,taxonomicissue,gbif_only,,only in GBIF
-218,verbatimScientificName,,verbatimscientificname,gbif_only,,only in GBIF
-219,acceptedScientificName,,acceptedscientificname,gbif_only,,only in GBIF
-220,subtribeKey,,subtribekey,gbif_only,,only in GBIF
-221,taxonKey,,taxonkey,gbif_only,,only in GBIF
-222,issue,,issue,gbif_only,,only in GBIF
-223,orderKey,,orderkey,gbif_only,,only in GBIF
-224,publisher,,publisher,gbif_only,,only in GBIF
-225,level2Name,,level2name,gbif_only,,only in GBIF
-226,subfamilyKey,,subfamilykey,gbif_only,,only in GBIF
-227,elevationAccuracy,,elevationaccuracy,gbif_only,,only in GBIF
-228,datasetKey,,datasetkey,gbif_only,,only in GBIF
-229,projectId,,projectid,gbif_only,,only in GBIF
-230,distanceFromCentroidInMeters,,distancefromcentroidinmeters,gbif_only,,only in GBIF
-231,protocol,,protocol,gbif_only,,only in GBIF
-232,nonTaxonomicIssue,,nontaxonomicissue,gbif_only,,only in GBIF
-233,,subphylumid,subphylumid,obis_only,,only in OBIS
-234,,subphylum,subphylum,obis_only,,only in OBIS
-235,,supertribeid,supertribeid,obis_only,,only in OBIS
-236,,domain,domain,obis_only,,only in OBIS
-237,,infrakingdom,infrakingdom,obis_only,,only in OBIS
-238,,familyid,familyid,obis_only,,only in OBIS
-239,,verbatimLongitude,verbatimlongitude,obis_only,,only in OBIS
-240,,subformaid,subformaid,obis_only,,only in OBIS
-241,,subdivisionid,subdivisionid,obis_only,,only in OBIS
-242,,subvariety,subvariety,obis_only,,only in OBIS
-243,,infrakingdomid,infrakingdomid,obis_only,,only in OBIS
-244,,classid,classid,obis_only,,only in OBIS
-245,,subsectionid,subsectionid,obis_only,,only in OBIS
-246,,hab,hab,obis_only,,only in OBIS
-247,,infraclassid,infraclassid,obis_only,,only in OBIS
-248,,supertribe,supertribe,obis_only,,only in OBIS
-249,,subkingdom,subkingdom,obis_only,,only in OBIS
-250,,infraphylum,infraphylum,obis_only,,only in OBIS
-251,,date_year,dateyear,obis_only,,only in OBIS
-252,,sectionid,sectionid,obis_only,,only in OBIS
-253,,wrims,wrims,obis_only,,only in OBIS
-254,,speciesid,speciesid,obis_only,,only in OBIS
-255,,subtribeid,subtribeid,obis_only,,only in OBIS
-256,,formaid,formaid,obis_only,,only in OBIS
-257,,parvphylum,parvphylum,obis_only,,only in OBIS
-258,,maximumElevationInMeters,maximumelevationinmeters,obis_only,,only in OBIS
-259,,varietyid,varietyid,obis_only,,only in OBIS
-260,,kingdomid,kingdomid,obis_only,,only in OBIS
-261,,forma,forma,obis_only,,only in OBIS
-262,,megaclassid,megaclassid,obis_only,,only in OBIS
-263,,aphiaid,aphiaid,obis_only,,only in OBIS
-264,,subterclassid,subterclassid,obis_only,,only in OBIS
-265,,verbatimLatitude,verbatimlatitude,obis_only,,only in OBIS
-266,,subfamilyid,subfamilyid,obis_only,,only in OBIS
-267,,subspeciesid,subspeciesid,obis_only,,only in OBIS
-268,,minimumDepthInMeters,minimumdepthinmeters,obis_only,,only in OBIS
-269,,superclass,superclass,obis_only,,only in OBIS
-270,,subphylum (subdivision)id,subphylum(subdivision)id,obis_only,,only in OBIS
-271,,unaccepted,unaccepted,obis_only,,only in OBIS
-272,,subclass,subclass,obis_only,,only in OBIS
-273,,brackish,brackish,obis_only,,only in OBIS
-274,,tribeid,tribeid,obis_only,,only in OBIS
-275,,geometry,geometry,obis_only,,only in OBIS
-276,,superdomainid,superdomainid,obis_only,,only in OBIS
-277,,shoredistance,shoredistance,obis_only,,only in OBIS
-278,,parvorderid,parvorderid,obis_only,,only in OBIS
-279,,domainid,domainid,obis_only,,only in OBIS
-280,,phylum (division)id,phylum(division)id,obis_only,,only in OBIS
-281,,geodeticDatum,geodeticdatum,obis_only,,only in OBIS
-282,,gigaclass,gigaclass,obis_only,,only in OBIS
-283,,subgenusid,subgenusid,obis_only,,only in OBIS
-284,,date_mid,datemid,obis_only,,only in OBIS
-285,,infraorder,infraorder,obis_only,,only in OBIS
-286,,maximumDepthInMeters,maximumdepthinmeters,obis_only,,only in OBIS
-287,,subsection,subsection,obis_only,,only in OBIS
-288,,associatedMedia,associatedmedia,obis_only,,only in OBIS
-289,,superclassid,superclassid,obis_only,,only in OBIS
-290,,sss,sss,obis_only,,only in OBIS
-291,,variety,variety,obis_only,,only in OBIS
-292,,megaclass,megaclass,obis_only,,only in OBIS
-293,,bathymetry,bathymetry,obis_only,,only in OBIS
-294,,section,section,obis_only,,only in OBIS
-295,,suborder,suborder,obis_only,,only in OBIS
-296,,sst,sst,obis_only,,only in OBIS
-297,,verbatimCoordinates,verbatimcoordinates,obis_only,,only in OBIS
-298,,superorder,superorder,obis_only,,only in OBIS
-299,,subterclass,subterclass,obis_only,,only in OBIS
-300,,suborderid,suborderid,obis_only,,only in OBIS
-301,,parvphylumid,parvphylumid,obis_only,,only in OBIS
-302,,phylum (division),phylum(division),obis_only,,only in OBIS
-303,,subkingdomid,subkingdomid,obis_only,,only in OBIS
-304,,orderid,orderid,obis_only,,only in OBIS
-305,,absence,absence,obis_only,,only in OBIS
-306,,subvarietyid,subvarietyid,obis_only,,only in OBIS
-307,,subforma,subforma,obis_only,,only in OBIS
-308,,parvorder,parvorder,obis_only,,only in OBIS
-309,,dataset_id,datasetid,obis_only,,only in OBIS
-310,,phylumid,phylumid,obis_only,,only in OBIS
-311,,subdivision,subdivision,obis_only,,only in OBIS
-312,,subspecies,subspecies,obis_only,,only in OBIS
-313,,dropped,dropped,obis_only,,only in OBIS
-314,,date_start,datestart,obis_only,,only in OBIS
-315,,divisionid,divisionid,obis_only,,only in OBIS
-316,,genusid,genusid,obis_only,,only in OBIS
-317,,country,country,obis_only,,only in OBIS
-318,,subphylum (subdivision),subphylum(subdivision),obis_only,,only in OBIS
-319,,division,division,obis_only,,only in OBIS
-320,,date_end,dateend,obis_only,,only in OBIS
-321,,infraphylumid,infraphylumid,obis_only,,only in OBIS
-322,,minimumElevationInMeters,minimumelevationinmeters,obis_only,,only in OBIS
-323,,gigaclassid,gigaclassid,obis_only,,only in OBIS
-324,,superorderid,superorderid,obis_only,,only in OBIS
-325,,subclassid,subclassid,obis_only,,only in OBIS
-326,,superdomain,superdomain,obis_only,,only in OBIS
-327,,scientificNameAuthorship,scientificnameauthorship,obis_only,,only in OBIS
-328,,infraclass,infraclass,obis_only,,only in OBIS
-329,,element,element,obis_only,,only in OBIS
-330,,infraorderid,infraorderid,obis_only,,only in OBIS
-331,,marine,marine,obis_only,,only in OBIS
+2,footprintWKT,footprintWKT,footprintwkt,exact,1.0,none
+3,institutionCode,institutionCode,institutioncode,exact,1.0,none
+4,vitality,vitality,vitality,exact,1.0,none
+5,associatedOccurrences,associatedOccurrences,associatedoccurrences,exact,1.0,none
+6,occurrenceID,occurrenceID,occurrenceid,exact,1.0,none
+7,organismQuantity,organismQuantity,organismquantity,exact,1.0,none
+8,specificEpithet,specificEpithet,specificepithet,exact,1.0,none
+9,georeferenceProtocol,georeferenceProtocol,georeferenceprotocol,exact,1.0,none
+10,tribe,tribe,tribe,exact,1.0,none
+11,associatedSequences,associatedSequences,associatedsequences,exact,1.0,none
+12,organismRemarks,organismRemarks,organismremarks,exact,1.0,none
+13,island,island,island,exact,1.0,none
+14,infragenericEpithet,infragenericEpithet,infragenericepithet,exact,1.0,none
+15,latestEonOrHighestEonothem,latestEonOrHighestEonothem,latesteonorhighesteonothem,exact,1.0,none
+16,taxonRemarks,taxonRemarks,taxonremarks,exact,1.0,none
+17,dynamicProperties,dynamicProperties,dynamicproperties,exact,1.0,none
+18,identificationRemarks,identificationRemarks,identificationremarks,exact,1.0,none
+19,year,year,year,exact,1.0,none
+20,subgenus,subgenus,subgenus,exact,1.0,none
+21,namePublishedInYear,namePublishedInYear,namepublishedinyear,exact,1.0,none
+22,datasetName,datasetName,datasetname,exact,1.0,none
+23,recordedBy,recordedBy,recordedby,exact,1.0,none
+24,coordinatePrecision,coordinatePrecision,coordinateprecision,exact,1.0,none
+25,geologicalContextID,geologicalContextID,geologicalcontextid,exact,1.0,none
+26,materialSampleID,materialSampleID,materialsampleid,exact,1.0,none
+27,identificationReferences,identificationReferences,identificationreferences,exact,1.0,none
+28,verbatimLocality,verbatimLocality,verbatimlocality,exact,1.0,none
+29,verbatimLabel,verbatimLabel,verbatimlabel,exact,1.0,none
+30,lowestBiostratigraphicZone,lowestBiostratigraphicZone,lowestbiostratigraphiczone,exact,1.0,none
+31,recordedByID,recordedByID,recordedbyid,exact,1.0,none
+32,institutionID,institutionID,institutionid,exact,1.0,none
+33,eventTime,eventTime,eventtime,exact,1.0,none
+34,bibliographicCitation,bibliographicCitation,bibliographiccitation,exact,1.0,none
+35,organismScope,organismScope,organismscope,exact,1.0,none
+36,month,month,month,exact,1.0,none
+37,class,class,class,exact,1.0,none
+38,type,type,type,exact,1.0,none
+39,identificationVerificationStatus,identificationVerificationStatus,identificationverificationstatus,exact,1.0,none
+40,acceptedNameUsage,acceptedNameUsage,acceptednameusage,exact,1.0,none
+41,formation,formation,formation,exact,1.0,none
+42,member,member,member,exact,1.0,none
+43,group,group,group,exact,1.0,none
+44,eventRemarks,eventRemarks,eventremarks,exact,1.0,none
+45,decimalLongitude,decimalLongitude,decimallongitude,exact,1.0,none
+46,accessRights,accessRights,accessrights,exact,1.0,none
+47,lithostratigraphicTerms,lithostratigraphicTerms,lithostratigraphicterms,exact,1.0,none
+48,verbatimEventDate,verbatimEventDate,verbatimeventdate,exact,1.0,none
+49,locationID,locationID,locationid,exact,1.0,none
+50,fieldNumber,fieldNumber,fieldnumber,exact,1.0,none
+51,locality,locality,locality,exact,1.0,none
+52,eventType,eventType,eventtype,exact,1.0,none
+53,recordNumber,recordNumber,recordnumber,exact,1.0,none
+54,verbatimCoordinateSystem,verbatimCoordinateSystem,verbatimcoordinatesystem,exact,1.0,none
+55,reproductiveCondition,reproductiveCondition,reproductivecondition,exact,1.0,none
+56,organismName,organismName,organismname,exact,1.0,none
+57,samplingProtocol,samplingProtocol,samplingprotocol,exact,1.0,none
+58,subtribe,subtribe,subtribe,exact,1.0,none
+59,parentNameUsageID,parentNameUsageID,parentnameusageid,exact,1.0,none
+60,county,county,county,exact,1.0,none
+61,georeferenceRemarks,georeferenceRemarks,georeferenceremarks,exact,1.0,none
+62,cultivarEpithet,cultivarEpithet,cultivarepithet,exact,1.0,none
+63,genericName,genericName,genericname,exact,1.0,none
+64,latestEraOrHighestErathem,latestEraOrHighestErathem,latesteraorhighesterathem,exact,1.0,none
+65,license,license,license,exact,1.0,none
+66,associatedReferences,associatedReferences,associatedreferences,exact,1.0,none
+67,georeferencedBy,georeferencedBy,georeferencedby,exact,1.0,none
+68,modified,modified,modified,exact,1.0,none
+69,establishmentMeans,establishmentMeans,establishmentmeans,exact,1.0,none
+70,identificationID,identificationID,identificationid,exact,1.0,none
+71,scientificNameID,scientificNameID,scientificnameid,exact,1.0,none
+72,individualCount,individualCount,individualcount,exact,1.0,none
+73,dateIdentified,dateIdentified,dateidentified,exact,1.0,none
+74,degreeOfEstablishment,degreeOfEstablishment,degreeofestablishment,exact,1.0,none
+75,georeferenceVerificationStatus,georeferenceVerificationStatus,georeferenceverificationstatus,exact,1.0,none
+76,locationAccordingTo,locationAccordingTo,locationaccordingto,exact,1.0,none
+77,namePublishedIn,namePublishedIn,namepublishedin,exact,1.0,none
+78,fieldNotes,fieldNotes,fieldnotes,exact,1.0,none
+79,nameAccordingTo,nameAccordingTo,nameaccordingto,exact,1.0,none
+80,organismID,organismID,organismid,exact,1.0,none
+81,latestEpochOrHighestSeries,latestEpochOrHighestSeries,latestepochorhighestseries,exact,1.0,none
+82,sex,sex,sex,exact,1.0,none
+83,infraspecificEpithet,infraspecificEpithet,infraspecificepithet,exact,1.0,none
+84,identifiedByID,identifiedByID,identifiedbyid,exact,1.0,none
+85,higherGeography,higherGeography,highergeography,exact,1.0,none
+86,typeStatus,typeStatus,typestatus,exact,1.0,none
+87,caste,caste,caste,exact,1.0,none
+88,family,family,family,exact,1.0,none
+89,startDayOfYear,startDayOfYear,startdayofyear,exact,1.0,none
+90,verbatimElevation,verbatimElevation,verbatimelevation,exact,1.0,none
+91,verbatimTaxonRank,verbatimTaxonRank,verbatimtaxonrank,exact,1.0,none
+92,taxonID,taxonID,taxonid,exact,1.0,none
+93,parentEventID,parentEventID,parenteventid,exact,1.0,none
+94,occurrenceRemarks,occurrenceRemarks,occurrenceremarks,exact,1.0,none
+95,earliestEpochOrLowestSeries,earliestEpochOrLowestSeries,earliestepochorlowestseries,exact,1.0,none
+96,originalNameUsageID,originalNameUsageID,originalnameusageid,exact,1.0,none
+97,organismQuantityType,organismQuantityType,organismquantitytype,exact,1.0,none
+98,earliestEonOrLowestEonothem,earliestEonOrLowestEonothem,earliesteonorlowesteonothem,exact,1.0,none
+99,continent,continent,continent,exact,1.0,none
+100,highestBiostratigraphicZone,highestBiostratigraphicZone,highestbiostratigraphiczone,exact,1.0,none
+101,verbatimSRS,verbatimSRS,verbatimsrs,exact,1.0,none
+102,taxonomicStatus,taxonomicStatus,taxonomicstatus,exact,1.0,none
+103,dna_derived,dna_derived,dnaderived,exact,1.0,none
+104,species,species,species,exact,1.0,none
+105,materialEntityRemarks,materialEntityRemarks,materialentityremarks,exact,1.0,none
+106,superfamily,superfamily,superfamily,exact,1.0,none
+107,pathway,pathway,pathway,exact,1.0,none
+108,georeferencedDate,georeferencedDate,georeferenceddate,exact,1.0,none
+109,materialEntityID,materialEntityID,materialentityid,exact,1.0,none
+110,stateProvince,stateProvince,stateprovince,exact,1.0,none
+111,earliestAgeOrLowestStage,earliestAgeOrLowestStage,earliestageorloweststage,exact,1.0,none
+112,lifeStage,lifeStage,lifestage,exact,1.0,none
+113,language,language,language,exact,1.0,none
+114,parentNameUsage,parentNameUsage,parentnameusage,exact,1.0,none
+115,earliestEraOrLowestErathem,earliestEraOrLowestErathem,earliesteraorlowesterathem,exact,1.0,none
+116,verbatimIdentification,verbatimIdentification,verbatimidentification,exact,1.0,none
+117,verbatimDepth,verbatimDepth,verbatimdepth,exact,1.0,none
+118,taxonConceptID,taxonConceptID,taxonconceptid,exact,1.0,none
+119,phylum,phylum,phylum,exact,1.0,none
+120,originalNameUsage,originalNameUsage,originalnameusage,exact,1.0,none
+121,endDayOfYear,endDayOfYear,enddayofyear,exact,1.0,none
+122,ownerInstitutionCode,ownerInstitutionCode,ownerinstitutioncode,exact,1.0,none
+123,rightsHolder,rightsHolder,rightsholder,exact,1.0,none
+124,datasetID,datasetID,datasetid,exact,1.0,none
+125,habitat,habitat,habitat,exact,1.0,none
+126,vernacularName,vernacularName,vernacularname,exact,1.0,none
+127,basisOfRecord,basisOfRecord,basisofrecord,exact,1.0,none
+128,minimumDistanceAboveSurfaceInMeters,minimumDistanceAboveSurfaceInMeters,minimumdistanceabovesurfaceinmeters,exact,1.0,none
+129,coordinateUncertaintyInMeters,coordinateUncertaintyInMeters,coordinateuncertaintyinmeters,exact,1.0,none
+130,nomenclaturalCode,nomenclaturalCode,nomenclaturalcode,exact,1.0,none
+131,preparations,preparations,preparations,exact,1.0,none
+132,islandGroup,islandGroup,islandgroup,exact,1.0,none
+133,georeferenceSources,georeferenceSources,georeferencesources,exact,1.0,none
+134,higherClassification,higherClassification,higherclassification,exact,1.0,none
+135,higherGeographyID,higherGeographyID,highergeographyid,exact,1.0,none
+136,previousIdentifications,previousIdentifications,previousidentifications,exact,1.0,none
+137,footprintSpatialFit,footprintSpatialFit,footprintspatialfit,exact,1.0,none
+138,day,day,day,exact,1.0,none
+139,earliestPeriodOrLowestSystem,earliestPeriodOrLowestSystem,earliestperiodorlowestsystem,exact,1.0,none
+140,catalogNumber,catalogNumber,catalognumber,exact,1.0,none
+141,maximumDistanceAboveSurfaceInMeters,maximumDistanceAboveSurfaceInMeters,maximumdistanceabovesurfaceinmeters,exact,1.0,none
+142,locationRemarks,locationRemarks,locationremarks,exact,1.0,none
+143,sampleSizeUnit,sampleSizeUnit,samplesizeunit,exact,1.0,none
+144,waterBody,waterBody,waterbody,exact,1.0,none
+145,references,references,references,exact,1.0,none
+146,dataGeneralizations,dataGeneralizations,datageneralizations,exact,1.0,none
+147,municipality,municipality,municipality,exact,1.0,none
+148,nameAccordingToID,nameAccordingToID,nameaccordingtoid,exact,1.0,none
+149,behavior,behavior,behavior,exact,1.0,none
+150,eventID,eventID,eventid,exact,1.0,none
+151,has_mof,has_mof,hasmof,exact,1.0,none
+152,collectionID,collectionID,collectionid,exact,1.0,none
+153,samplingEffort,samplingEffort,samplingeffort,exact,1.0,none
+154,footprintSRS,footprintSRS,footprintsrs,exact,1.0,none
+155,verticalDatum,verticalDatum,verticaldatum,exact,1.0,none
+156,source_id,source_id,sourceid,exact,1.0,none
+157,associatedOrganisms,associatedOrganisms,associatedorganisms,exact,1.0,none
+158,latestAgeOrHighestStage,latestAgeOrHighestStage,latestageorhigheststage,exact,1.0,none
+159,bed,bed,bed,exact,1.0,none
+160,decimalLatitude,decimalLatitude,decimallatitude,exact,1.0,none
+161,pointRadiusSpatialFit,pointRadiusSpatialFit,pointradiusspatialfit,exact,1.0,none
+162,latestPeriodOrHighestSystem,latestPeriodOrHighestSystem,latestperiodorhighestsystem,exact,1.0,none
+163,collectionCode,collectionCode,collectioncode,exact,1.0,none
+164,informationWithheld,informationWithheld,informationwithheld,exact,1.0,none
+165,order,order,order,exact,1.0,none
+166,subfamily,subfamily,subfamily,exact,1.0,none
+167,occurrenceStatus,occurrenceStatus,occurrencestatus,exact,1.0,none
+168,associatedTaxa,associatedTaxa,associatedtaxa,exact,1.0,none
+169,identifiedBy,identifiedBy,identifiedby,exact,1.0,none
+170,acceptedNameUsageID,acceptedNameUsageID,acceptednameusageid,exact,1.0,none
+171,nomenclaturalStatus,nomenclaturalStatus,nomenclaturalstatus,exact,1.0,none
+172,genus,genus,genus,exact,1.0,none
+173,namePublishedInID,namePublishedInID,namepublishedinid,exact,1.0,none
+174,disposition,disposition,disposition,exact,1.0,none
+175,taxonRank,taxonRank,taxonrank,exact,1.0,none
+176,data_source,data_source,datasource,exact,1.0,none
+177,scientificName,scientificName,scientificname,exact,1.0,none
+178,countryCode,countryCode,countrycode,exact,1.0,none
+179,identificationQualifier,identificationQualifier,identificationqualifier,exact,1.0,none
+180,kingdom,kingdom,kingdom,exact,1.0,none
+181,sampleSizeValue,sampleSizeValue,samplesizevalue,exact,1.0,none
+182,eventDate,eventDate,eventdate,exact,1.0,none
+183,depth,depth,depth,exact,1.0,none
+184,otherCatalogNumbers,otherCatalogNumbers,othercatalognumbers,exact,1.0,none
+0,iucnRedListCategory,redlist_category,iucnredlistcategory,fuzzy,0.8823529411764706,GBIF: 'iucnRedListCategory' vs OBIS: 'redlist_category'
+1,superfamilyKey,superfamilyid,superfamilykey,fuzzy,0.8148148148148148,GBIF: 'superfamilyKey' vs OBIS: 'superfamilyid'
+185,lastParsed,,lastparsed,gbif_only,,only in GBIF
+186,level2Gid,,level2gid,gbif_only,,only in GBIF
+187,projectId,,projectid,gbif_only,,only in GBIF
+188,level0Name,,level0name,gbif_only,,only in GBIF
+189,publishedByGbifRegion,,publishedbygbifregion,gbif_only,,only in GBIF
+190,acceptedTaxonKey,,acceptedtaxonkey,gbif_only,,only in GBIF
+191,verbatimScientificName,,verbatimscientificname,gbif_only,,only in GBIF
+192,level0Gid,,level0gid,gbif_only,,only in GBIF
+193,publishingCountry,,publishingcountry,gbif_only,,only in GBIF
+194,level1Name,,level1name,gbif_only,,only in GBIF
+195,level2Name,,level2name,gbif_only,,only in GBIF
+196,relativeOrganismQuantity,,relativeorganismquantity,gbif_only,,only in GBIF
+197,taxonomicIssue,,taxonomicissue,gbif_only,,only in GBIF
+198,level1Gid,,level1gid,gbif_only,,only in GBIF
+199,typifiedName,,typifiedname,gbif_only,,only in GBIF
+200,distanceFromCentroidInMeters,,distancefromcentroidinmeters,gbif_only,,only in GBIF
+201,acceptedScientificName,,acceptedscientificname,gbif_only,,only in GBIF
+202,subfamilyKey,,subfamilykey,gbif_only,,only in GBIF
+203,nonTaxonomicIssue,,nontaxonomicissue,gbif_only,,only in GBIF
+204,lastCrawled,,lastcrawled,gbif_only,,only in GBIF
+205,publisher,,publisher,gbif_only,,only in GBIF
+206,classKey,,classkey,gbif_only,,only in GBIF
+207,datasetKey,,datasetkey,gbif_only,,only in GBIF
+208,hasGeospatialIssues,,hasgeospatialissues,gbif_only,,only in GBIF
+209,lastInterpreted,,lastinterpreted,gbif_only,,only in GBIF
+210,protocol,,protocol,gbif_only,,only in GBIF
+211,taxonKey,,taxonkey,gbif_only,,only in GBIF
+212,subtribeKey,,subtribekey,gbif_only,,only in GBIF
+213,gbifRegion,,gbifregion,gbif_only,,only in GBIF
+214,repatriated,,repatriated,gbif_only,,only in GBIF
+215,tribeKey,,tribekey,gbif_only,,only in GBIF
+216,mediaType,,mediatype,gbif_only,,only in GBIF
+217,phylumKey,,phylumkey,gbif_only,,only in GBIF
+218,level3Name,,level3name,gbif_only,,only in GBIF
+219,speciesKey,,specieskey,gbif_only,,only in GBIF
+220,depthAccuracy,,depthaccuracy,gbif_only,,only in GBIF
+221,hasCoordinate,,hascoordinate,gbif_only,,only in GBIF
+222,genusKey,,genuskey,gbif_only,,only in GBIF
+223,familyKey,,familykey,gbif_only,,only in GBIF
+224,orderKey,,orderkey,gbif_only,,only in GBIF
+225,issue,,issue,gbif_only,,only in GBIF
+226,subgenusKey,,subgenuskey,gbif_only,,only in GBIF
+227,level3Gid,,level3gid,gbif_only,,only in GBIF
+228,isInvasive,,isinvasive,gbif_only,,only in GBIF
+229,elevationAccuracy,,elevationaccuracy,gbif_only,,only in GBIF
+230,isSequenced,,issequenced,gbif_only,,only in GBIF
+231,kingdomKey,,kingdomkey,gbif_only,,only in GBIF
+232,elevation,,elevation,gbif_only,,only in GBIF
+233,,classid,classid,obis_only,,only in OBIS
+234,,hab,hab,obis_only,,only in OBIS
+235,,megaclass,megaclass,obis_only,,only in OBIS
+236,,phylumid,phylumid,obis_only,,only in OBIS
+237,,infraorderid,infraorderid,obis_only,,only in OBIS
+238,,subvarietyid,subvarietyid,obis_only,,only in OBIS
+239,,scientificNameAuthorship,scientificnameauthorship,obis_only,,only in OBIS
+240,,subsectionid,subsectionid,obis_only,,only in OBIS
+241,,domain,domain,obis_only,,only in OBIS
+242,,subspecies,subspecies,obis_only,,only in OBIS
+243,,superorder,superorder,obis_only,,only in OBIS
+244,,sss,sss,obis_only,,only in OBIS
+245,,subdivision,subdivision,obis_only,,only in OBIS
+246,,subvariety,subvariety,obis_only,,only in OBIS
+247,,sst,sst,obis_only,,only in OBIS
+248,,superorderid,superorderid,obis_only,,only in OBIS
+249,,subfamilyid,subfamilyid,obis_only,,only in OBIS
+250,,date_end,dateend,obis_only,,only in OBIS
+251,,subkingdomid,subkingdomid,obis_only,,only in OBIS
+252,,parvphylum,parvphylum,obis_only,,only in OBIS
+253,,country,country,obis_only,,only in OBIS
+254,,dropped,dropped,obis_only,,only in OBIS
+255,,infraorder,infraorder,obis_only,,only in OBIS
+256,,variety,variety,obis_only,,only in OBIS
+257,,infrakingdomid,infrakingdomid,obis_only,,only in OBIS
+258,,forma,forma,obis_only,,only in OBIS
+259,,subkingdom,subkingdom,obis_only,,only in OBIS
+260,,genusid,genusid,obis_only,,only in OBIS
+261,,orderid,orderid,obis_only,,only in OBIS
+262,,maximumDepthInMeters,maximumdepthinmeters,obis_only,,only in OBIS
+263,,infraclassid,infraclassid,obis_only,,only in OBIS
+264,,maximumElevationInMeters,maximumelevationinmeters,obis_only,,only in OBIS
+265,,subphylum (subdivision)id,subphylum(subdivision)id,obis_only,,only in OBIS
+266,,supertribe,supertribe,obis_only,,only in OBIS
+267,,associatedMedia,associatedmedia,obis_only,,only in OBIS
+268,,parvorder,parvorder,obis_only,,only in OBIS
+269,,domainid,domainid,obis_only,,only in OBIS
+270,,subphylum (subdivision),subphylum(subdivision),obis_only,,only in OBIS
+271,,element,element,obis_only,,only in OBIS
+272,,marine,marine,obis_only,,only in OBIS
+273,,subphylum,subphylum,obis_only,,only in OBIS
+274,,subdivisionid,subdivisionid,obis_only,,only in OBIS
+275,,varietyid,varietyid,obis_only,,only in OBIS
+276,,infrakingdom,infrakingdom,obis_only,,only in OBIS
+277,,subforma,subforma,obis_only,,only in OBIS
+278,,geodeticDatum,geodeticdatum,obis_only,,only in OBIS
+279,,familyid,familyid,obis_only,,only in OBIS
+280,,subterclass,subterclass,obis_only,,only in OBIS
+281,,superclass,superclass,obis_only,,only in OBIS
+282,,suborder,suborder,obis_only,,only in OBIS
+283,,wrims,wrims,obis_only,,only in OBIS
+284,,date_year,dateyear,obis_only,,only in OBIS
+285,,divisionid,divisionid,obis_only,,only in OBIS
+286,,gigaclassid,gigaclassid,obis_only,,only in OBIS
+287,,minimumDepthInMeters,minimumdepthinmeters,obis_only,,only in OBIS
+288,,speciesid,speciesid,obis_only,,only in OBIS
+289,,kingdomid,kingdomid,obis_only,,only in OBIS
+290,,infraphylum,infraphylum,obis_only,,only in OBIS
+291,,infraclass,infraclass,obis_only,,only in OBIS
+292,,subspeciesid,subspeciesid,obis_only,,only in OBIS
+293,,geometry,geometry,obis_only,,only in OBIS
+294,,superdomain,superdomain,obis_only,,only in OBIS
+295,,brackish,brackish,obis_only,,only in OBIS
+296,,superclassid,superclassid,obis_only,,only in OBIS
+297,,date_mid,datemid,obis_only,,only in OBIS
+298,,subphylumid,subphylumid,obis_only,,only in OBIS
+299,,suborderid,suborderid,obis_only,,only in OBIS
+300,,tribeid,tribeid,obis_only,,only in OBIS
+301,,dataset_id,datasetid,obis_only,,only in OBIS
+302,,shoredistance,shoredistance,obis_only,,only in OBIS
+303,,parvphylumid,parvphylumid,obis_only,,only in OBIS
+304,,subclassid,subclassid,obis_only,,only in OBIS
+305,,bathymetry,bathymetry,obis_only,,only in OBIS
+306,,phylum (division)id,phylum(division)id,obis_only,,only in OBIS
+307,,division,division,obis_only,,only in OBIS
+308,,minimumElevationInMeters,minimumelevationinmeters,obis_only,,only in OBIS
+309,,verbatimCoordinates,verbatimcoordinates,obis_only,,only in OBIS
+310,,subtribeid,subtribeid,obis_only,,only in OBIS
+311,,phylum (division),phylum(division),obis_only,,only in OBIS
+312,,supertribeid,supertribeid,obis_only,,only in OBIS
+313,,subgenusid,subgenusid,obis_only,,only in OBIS
+314,,verbatimLongitude,verbatimlongitude,obis_only,,only in OBIS
+315,,superdomainid,superdomainid,obis_only,,only in OBIS
+316,,verbatimLatitude,verbatimlatitude,obis_only,,only in OBIS
+317,,absence,absence,obis_only,,only in OBIS
+318,,sectionid,sectionid,obis_only,,only in OBIS
+319,,subsection,subsection,obis_only,,only in OBIS
+320,,date_start,datestart,obis_only,,only in OBIS
+321,,unaccepted,unaccepted,obis_only,,only in OBIS
+322,,infraphylumid,infraphylumid,obis_only,,only in OBIS
+323,,gigaclass,gigaclass,obis_only,,only in OBIS
+324,,parvorderid,parvorderid,obis_only,,only in OBIS
+325,,megaclassid,megaclassid,obis_only,,only in OBIS
+326,,subformaid,subformaid,obis_only,,only in OBIS
+327,,aphiaid,aphiaid,obis_only,,only in OBIS
+328,,formaid,formaid,obis_only,,only in OBIS
+329,,section,section,obis_only,,only in OBIS
+330,,subclass,subclass,obis_only,,only in OBIS
+331,,subterclassid,subterclassid,obis_only,,only in OBIS

@@ -1,22 +1,22 @@
 ,gbif_column,obis_column,normalized_name,match_type,similarity,differences
 13,data_source,data_source,datasource,exact,1.0,none
-14,source_id,source_id,sourceid,exact,1.0,none
-15,occurrence_source_id,occurrence_source_id,occurrencesourceid,exact,1.0,none
-0,measurementdetermineddate,measurementDeterminedDate,measurementdetermineddate,fuzzy,1.0,GBIF: 'measurementdetermineddate' vs OBIS: 'measurementDeterminedDate'
-1,measurementvalue,measurementValue,measurementvalue,fuzzy,1.0,GBIF: 'measurementvalue' vs OBIS: 'measurementValue'
+14,occurrence_source_id,occurrence_source_id,occurrencesourceid,exact,1.0,none
+15,source_id,source_id,sourceid,exact,1.0,none
+0,measurementvalueid,measurementValueID,measurementvalueid,fuzzy,1.0,GBIF: 'measurementvalueid' vs OBIS: 'measurementValueID'
+1,measurementremarks,measurementRemarks,measurementremarks,fuzzy,1.0,GBIF: 'measurementremarks' vs OBIS: 'measurementRemarks'
 2,occurrenceid,occurrenceID,occurrenceid,fuzzy,1.0,GBIF: 'occurrenceid' vs OBIS: 'occurrenceID'
-3,measurementvalueid,measurementValueID,measurementvalueid,fuzzy,1.0,GBIF: 'measurementvalueid' vs OBIS: 'measurementValueID'
+3,measurementdetermineddate,measurementDeterminedDate,measurementdetermineddate,fuzzy,1.0,GBIF: 'measurementdetermineddate' vs OBIS: 'measurementDeterminedDate'
 4,measurementtypeid,measurementTypeID,measurementtypeid,fuzzy,1.0,GBIF: 'measurementtypeid' vs OBIS: 'measurementTypeID'
-5,measurementunitid,measurementUnitID,measurementunitid,fuzzy,1.0,GBIF: 'measurementunitid' vs OBIS: 'measurementUnitID'
-6,measurementremarks,measurementRemarks,measurementremarks,fuzzy,1.0,GBIF: 'measurementremarks' vs OBIS: 'measurementRemarks'
-7,measurementid,measurementID,measurementid,fuzzy,1.0,GBIF: 'measurementid' vs OBIS: 'measurementID'
-8,measurementtype,measurementType,measurementtype,fuzzy,1.0,GBIF: 'measurementtype' vs OBIS: 'measurementType'
-9,measurementunit,measurementUnit,measurementunit,fuzzy,1.0,GBIF: 'measurementunit' vs OBIS: 'measurementUnit'
-10,measurementaccuracy,measurementAccuracy,measurementaccuracy,fuzzy,1.0,GBIF: 'measurementaccuracy' vs OBIS: 'measurementAccuracy'
-11,measurementdeterminedby,measurementDeterminedBy,measurementdeterminedby,fuzzy,1.0,GBIF: 'measurementdeterminedby' vs OBIS: 'measurementDeterminedBy'
-12,measurementmethod,measurementMethod,measurementmethod,fuzzy,1.0,GBIF: 'measurementmethod' vs OBIS: 'measurementMethod'
+5,measurementvalue,measurementValue,measurementvalue,fuzzy,1.0,GBIF: 'measurementvalue' vs OBIS: 'measurementValue'
+6,measurementmethod,measurementMethod,measurementmethod,fuzzy,1.0,GBIF: 'measurementmethod' vs OBIS: 'measurementMethod'
+7,measurementdeterminedby,measurementDeterminedBy,measurementdeterminedby,fuzzy,1.0,GBIF: 'measurementdeterminedby' vs OBIS: 'measurementDeterminedBy'
+8,measurementaccuracy,measurementAccuracy,measurementaccuracy,fuzzy,1.0,GBIF: 'measurementaccuracy' vs OBIS: 'measurementAccuracy'
+9,measurementid,measurementID,measurementid,fuzzy,1.0,GBIF: 'measurementid' vs OBIS: 'measurementID'
+10,measurementunitid,measurementUnitID,measurementunitid,fuzzy,1.0,GBIF: 'measurementunitid' vs OBIS: 'measurementUnitID'
+11,measurementtype,measurementType,measurementtype,fuzzy,1.0,GBIF: 'measurementtype' vs OBIS: 'measurementType'
+12,measurementunit,measurementUnit,measurementunit,fuzzy,1.0,GBIF: 'measurementunit' vs OBIS: 'measurementUnit'
 16,datasetkey,,datasetkey,gbif_only,,only in GBIF
 17,,_id,id,obis_only,,only in OBIS
-18,,level,level,obis_only,,only in OBIS
-19,,_event_id,eventid,obis_only,,only in OBIS
-20,,id,id,obis_only,,only in OBIS
+18,,_event_id,eventid,obis_only,,only in OBIS
+19,,id,id,obis_only,,only in OBIS
+20,,level,level,obis_only,,only in OBIS
