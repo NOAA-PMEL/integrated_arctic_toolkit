@@ -1,51 +1,68 @@
 from dash import Input, Output, callback
 import plotly.express as px
+import plotly.graph_objects as go
 import pandas as pd
-from constants import postgres_engine
+from data_queries import get_biology_data, fetch_sst
 
 @callback(
     Output("main-map", "figure"),
-    Input("main-map", "id") # main figure fires on page load
+    Input("layer-toggle", "value") # main figure fires on page load
 )
-def update_map(_):
-    # Pull a sample of points - will want a representative points for main map (will do a different query upon zoom to show more detailed points)
-    # This query will average lat/lon/species count into averages for each 1 degree grid in the world - will at most return 64,800 cells(180*360)
-    # double quotes says column names not aliases
-    query = """
-        SELECT
-            AVG("decimalLongitude") as longitude,
-            AVG("decimalLatitude") as latitude, 
-            COUNT(*) as point_count,
-            COUNT(DISTINCT species) as species_count,
-            'biology' as datatype
-        FROM occurrence
-        WHERE "decimalLongitude" IS NOT NULL
-            AND "decimalLatitude" IS NOT NULL
-        GROUP BY
-            ROUND("decimalLongitude"::numeric, 1),
-            ROUND("decimalLatitude"::numeric, 1)
-        """
+def update_map(active_layers):
+    fig = go.Figure()
 
-    df = pd.read_sql(query, postgres_engine)
+    # Biology layer
+    if "biology" in active_layers:
+        df_bio = get_biology_data()
 
-    df["hover_text"] = (
-        "Occurrences: " + df["point_count"].astype(str) + "<br>" +
-        "Unique species: " + df["species_count"].astype(str)
-    )
+        fig.add_trace(go.Scattermap(
+            lat=df_bio["latitude"],
+            lon=df_bio["longitude"],
+            mode="markers",
+            marker=dict(size=6, color="blue", opacity=0.6),
+            name="Biology",
+            hovertemplate=(
+                "Occurrences: %{customdata[0]}<br>"
+                "Unique spcies: %{customdata[1]}<extra></extra>"
+            ),
+            customdata=df_bio[["point_count", "species_count"]].values
+        ))
 
-    fig = px.scatter_map(
-        df,
-        lat="latitude",
-        lon="longitude",
-        hover_name="datatype",
-        custom_data=["hover_text"],
-        zoom=2,
+    # -- SST Layer --
+    if "sst" in active_layers:
+        df_sst = fetch_sst()
+
+        if not df_sst.empty:
+            fig.add_trace(go.Scattermap(
+                lat=df_sst["latitude"],
+                lon=df_sst["longitude"],
+                mode="markers",
+                marker=dict(
+                    size=4,
+                    color=df_sst["sst"],
+                    colorscale="RdBu_r", # blue=cold, red=warm
+                    colorbar=dict(title="SST (°C)"),
+                    opacity=0.5
+                ),
+                name="SST",
+                hovertemplate=(
+                    "SST: %{customdata[0]:.1f}°C<br>"
+                    "Ice fraction: %{customdata[1]:.2f}<extra></extra>"
+                ),
+                customdata=df_sst[["sst", "sea_ice_fraction"]].values
+            )) 
+
+    
+    fig.update_layout(
+        map_style="open-street-map",
+        map_zoom=1,
+        map_center={"lat": 20, "lon": 0},
         height=700,
-        map_style="open-street-map"
+        margin={"r": 0, "t": 0, "l": 0, "b": 0},
+        legend=dict(
+            yanchor="top", y=0.99,
+            xanchor="left", x=0.01
+        )
     )
-
-    fig.update_traces(
-        hovertemplate="<b>%{hovertext}</b><br>%{customdata[0]}<extra></extra>"
-    )
-
+    
     return fig
