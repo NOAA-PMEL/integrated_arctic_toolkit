@@ -54,7 +54,7 @@ def update_map(active_layers):
 
     
     fig.update_layout(
-        map_style="open-street-map",
+        map_style="carto-positron",
         map_zoom=1,
         map_center={"lat": 20, "lon": 0},
         height=700,

@@ -1,4 +1,4 @@
-from dash import Dash
+from dash import Dash, html
 from cache import cache
 from layouts.main_layout import layout
 import dash_design_kit as ddk
@@ -9,9 +9,7 @@ app = Dash(__name__)
 
 # app.layout = layout
 # This is the "Shell" that enables the editor
-app.layout = ddk.App(show_editor=True, children=[
-    layout
-])
+app.layout = layout
 
 server = app.server # expose flask server for Gunicorn
 
