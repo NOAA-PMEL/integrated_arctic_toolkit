@@ -1,2 +1,3 @@
-from layouts.map_controls import map_controls
+from layouts.map_layers import map_layers
 from layouts.date_controls import date_controls
+from layouts.biology_filter import biology_filter

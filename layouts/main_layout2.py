@@ -1,7 +1,7 @@
 import dash_design_kit as ddk
 from dash import dcc, html
 from constants import theme
-from layouts import date_controls
+from layouts import date_controls, map_layers, biology_filter
 
 # TODO: Fix font of dcc Items (e.g. "Biology" option)
 
@@ -31,37 +31,14 @@ layout = ddk.App(
                     children=[
                         ddk.Menu(
                             children=[
-                                
-                                # -- MAP LAYERS ----
-                                ddk.CollapsibleMenu( # collapsbileMenu can only be used inside Menu as a child
-                                    title='Map Layers',
-                                    default_open=True,
-                                    self_collapsing=True, # will collapse when another submenu is clicked
-                                    children=[
-                                        ddk.ControlCard(
-                                            children=[
-                                                ddk.ControlItem(
-                                                    # label="Biology",
-                                                    children=dcc.Checklist(
-                                                        id="layer-toggle",
-                                                        options=[
-                                                            {"label": "Biology Occurence", "value": "occurrence"},
-                                                            {"label": "SST", "value": "sst"},
-                                                        ],
-                                                        value=["occurrence"], # what is automatically checked
-                                                   
-                                                    )
-                                                )
-                                            ]
-                                        )
-                                    ]
-                                ),
-
+                 
+                                map_layers,
                                 # --- FILTERS ---
                                 ddk.CollapsibleMenu(
                                     title="Filters",
                                     default_open=True,
-                                    children=[date_controls
+                                    children=[biology_filter,
+                                        date_controls,
                                         # ddk.ControlCard(
                                         #     children=[
                                         #         ddk.ControlItem(
