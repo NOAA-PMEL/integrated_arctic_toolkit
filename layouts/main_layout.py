@@ -1,14 +1,15 @@
 from dash import dcc, html
 from layouts import map_controls, date_controls
 import dash_design_kit as ddk
+from constants import theme
 
 layout = ddk.App(
-    show_editor=True,
+    theme=theme,
     children=[
         # 1. The Top Header
         ddk.Header(
             children=[
-                ddk.Logo(src="/assets/noaa-logo-rgb-2022.png"),
+                ddk.Logo(src="assets/noaa-logo-rgb-2022.png"),
                 ddk.Title("Integrated Arctic Toolkit"),
             ]
         ),
@@ -18,7 +19,9 @@ layout = ddk.App(
                 "padding": "0", 
                 "height": "calc(100vh - 60px)",
                 "alignItems": "stretch",
-                "overflow": "hidden"},
+                "overflow": "hidden",
+                "display": "flex"
+                },
             children=[
                 ddk.Sidebar(
                     foldable=True,
@@ -27,8 +30,9 @@ layout = ddk.App(
                         "minWidth": "400px",
                         "maxWidth": "400px",
                         "flexShrink": "0",
-                        "height": "150%",
-                        "overflowY": "auto"
+                        "height": "100%",
+                        "overflowY": "auto",
+                        "minHeight": "0"
                         },
                     children=[
                         ddk.ControlCard(
@@ -58,13 +62,19 @@ layout = ddk.App(
                     ),
                 ddk.Block(
                     style={
-                        "flex": 1,
+                        "flex": "1",
                         "minWidth": "0",
                         "height": "100%",
-                        "padding": "0"
+                        "padding": "0",
+                        "display": "flex",
+                        "flexDirection": "column",
                     },
                     children=[
-                        ddk.Graph(id="main-map",style={"height": "95%", "width": "98%"}
+                        ddk.Graph(id="main-map",style={
+                            "flex": "1",
+                            "height": "100%", 
+                            "width": "100%",
+                            "minHeight": "0"}
                         )
                     ]
                 )

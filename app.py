@@ -1,9 +1,9 @@
 from dash import Dash, html
 from cache import cache
-from layouts.main_layout import layout
+from layouts.main_layout2 import layout
 import dash_design_kit as ddk
 import os
-import callbacks.map_callbacks # importing is enough, will run the file which will register the callback
+# import callbacks.map_callbacks # importing is enough, will run the file which will register the callback
 
 app = Dash(__name__)
 
