@@ -1,4 +1,4 @@
-from dash import Input, Output, callback
+from dash import Input, Output, callback, no_update
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
@@ -67,3 +67,19 @@ def update_map(biology_on, sst_on):
     )
     
     return fig
+
+
+@callback(
+    Output("filter-bio-subtypes", "options"),
+    Output("filter-bio-subtypes", "value"),
+    Input("biology-switch", "on"),
+)
+def toggle_bio_subfilter(biology_on):
+    options = [
+        {"label": " DNA", "value": "dna"},
+        {"label": " MOF", "value": "mof"}
+        ]
+
+    # Clear selections when biology is turned off
+    value = [] if not biology_on else no_update
+    return options, value
