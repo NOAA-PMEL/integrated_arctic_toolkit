@@ -6,13 +6,14 @@ from data_queries import get_biology_data, fetch_sst
 
 @callback(
     Output("main-map", "figure"),
-    Input("layer-toggle", "value") # main figure fires on page load
+    Input("biology-switch", "on"), # main figure fires on page load
+    Input("sst-switch", "on")
 )
-def update_map(active_layers):
+def update_map(biology_on, sst_on):
     fig = go.Figure()
 
     # Biology layer
-    if "biology" in active_layers:
+    if biology_on:
         df_bio = get_biology_data()
 
         fig.add_trace(go.Scattermap(
@@ -29,7 +30,7 @@ def update_map(active_layers):
         ))
 
     # -- SST Layer --
-    if "sst" in active_layers:
+    if sst_on:
         df_sst = fetch_sst()
 
         if not df_sst.empty:
