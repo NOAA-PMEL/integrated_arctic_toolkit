@@ -17,28 +17,30 @@ layout = ddk.App(
         ),
         ddk.Sidebar(
             id="sidebar",
-                children=[
-                    ddk.Menu(children=[
-                        map_layers,
-                        # --- FILTERS ---
-                        ddk.CollapsibleMenu(
-                            title="Filters",
-                            default_open=True,
-                            children=[biology_filter,
-                                date_controls,
-                            ]
-                        )
-                    ]
-                ),
+            className="wide-sidebar",
+            foldable=False,     # This prevents it from "folding" into icons on smaller screens
+            children=[
+                ddk.Menu(children=[
+                    map_layers,
+                    # --- FILTERS ---
+                    ddk.CollapsibleMenu(
+                        title="Filters",
+                        default_open=True,
+                        children=[biology_filter,
+                            date_controls,
+                        ]
+                    )
+                ]
+            ),
+        ]
+    ),
+
+    ddk.SidebarCompanion([
+            ddk.Graph(id="main-map",)
             ]
-        ),
-
-        ddk.SidebarCompanion([
-                ddk.Graph(id="main-map")
-        ])
-
-    ]
         )
+    ]
+)
 
 
 #                 ddk.Sidebar(

@@ -1,0 +1,6 @@
+/* Custom class for a wider sidebar */
+.wide-sidebar {
+    width: 25% !important;
+    max-width: 450px !important;
+    min-width: 300px !important;
+}
