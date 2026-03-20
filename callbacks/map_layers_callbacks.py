@@ -4,17 +4,20 @@ import plotly.graph_objects as go
 import pandas as pd
 from data_queries import get_biology_data, fetch_sst
 
+# TODO: Add bio-subfiltering to this callback
+# Render map based on switches and check boxes in Map Layers side panel section
 @callback(
     Output("main-map", "figure"),
     Input("biology-switch", "on"), # main figure fires on page load
-    Input("sst-switch", "on")
+    Input("sst-switch", "on"),
+    Input("filter-bio-subtypes", "value")
 )
-def update_map(biology_on, sst_on):
+def update_map(biology_on, sst_on, bio_subtypes):
     fig = go.Figure()
 
     # Biology layer
     if biology_on:
-        df_bio = get_biology_data()
+        df_bio = get_biology_data(bio_subtypes=bio_subtypes)
 
         fig.add_trace(go.Scattermap(
             lat=df_bio["latitude"],

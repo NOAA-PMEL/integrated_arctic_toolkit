@@ -26,8 +26,9 @@ layout = ddk.App(
                     ddk.CollapsibleMenu(
                         title="Filters",
                         default_open=True,
-                        children=[biology_filter,
-                            date_controls,
+                        children=[
+                            # biology_filter,
+                            # date_controls,
                         ]
                     )
                 ]
