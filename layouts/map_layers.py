@@ -84,7 +84,7 @@ sst_switch = html.Div(
                 ], 
             )  
 
-map_layers = ddk.CollapsibleMenu(title="Map Layers", default_open=True, self_collapsing=True, children=[
+map_layers = ddk.CollapsibleMenu(title="Map Layers", default_open=True, children=[
     ddk.ControlItem(children=[
         html.Div(children=[  # Added 'children=[' here to wrap the two sections so the two switches stack on top instead of side by side
             biology_switch,

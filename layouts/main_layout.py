@@ -1,7 +1,8 @@
+from datetime import date
 import dash_design_kit as ddk
 from dash import dcc, html
 from constants import theme
-from layouts import date_controls, map_layers, biology_filter
+from layouts import map_layers, date_controls
 
 # TODO: Fix font of dcc Items (e.g. "Biology" option)
 
@@ -22,15 +23,16 @@ layout = ddk.App(
             children=[
                 ddk.Menu(children=[
                     map_layers,
+                    date_controls
                     # --- FILTERS ---
-                    ddk.CollapsibleMenu(
-                        title="Filters",
-                        default_open=True,
-                        children=[
-                            # biology_filter,
-                            # date_controls,
-                        ]
-                    )
+                    # ddk.CollapsibleMenu(
+                    #     title="Filters",
+                    #     default_open=True,
+                    #     children=[
+                    #         # biology_filter,
+                    #         # date_controls,
+                    #     ]
+                    # )
                 ]
             ),
         ]
