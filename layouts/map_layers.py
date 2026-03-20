@@ -9,37 +9,58 @@ map_layers = html.Div(children=[
         ddk.Title('Map Layers:', style={'fontSize': '.9em', 'paddingLeft': '5px'})
     ]),
     
-    # Boolean switch
     # 2. Biology Switch Section
     html.Div(
         style={
             "display": "flex",
             "alignItems": "center",
-            "justifyContent": "space-between",
             "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "marginBottom": "10px",
+            "marginBottom": "8px",
         },
         children=[
-            html.Span("Biology", style={"fontFamily": "ineherit", "fontSize": "13px"}),
+            html.Span(
+                "Biology", 
+                title="Biological occurrence records from GBIF and OBIS.",
+                style={
+                    "width": "65px",        # <--- This forces the alignment
+                    "fontSize": ".85em",
+                    "display": "inline-block"
+                }
+            ),
             daq.BooleanSwitch(
                 id='biology-switch',
                 on=True,
-                theme=theme,
-                color="#C5CAE9", # light periwinkle
+                color="#C5CAE9",
+                style={"display": "inline-block"}
             ),
         ]),
+
     # 3. SST Switch Section
-    html.Div([
-        daq.BooleanSwitch(
-            id='sst-switch',
-            on=False,
-            label="SST",
-            theme=theme,
-            labelPosition="left",
-            color="#C5CAE9"
-        )
-    ], style={'paddingLeft': '10px', 'fontFamily': 'inherit'})
+    html.Div(
+        style={
+            "display": "flex",
+            "alignItems": "center",
+            "paddingLeft": "10px",
+            "marginBottom": "8px",
+        },
+        children=[
+            html.Span(
+                "SST", 
+                title="Sea Surface Temperature from NOAA Coral Reef Watch",
+                style={
+                    "width": "65px",        # <--- Matches the width above
+                    "fontSize": ".85em",
+                    "display": "inline-block"
+                }
+            ),
+            daq.BooleanSwitch(
+                id='sst-switch',
+                on=False,
+                color="#C5CAE9",
+                style={"display": "inline-block"}
+            )
+        ], 
+    )
 ])
     
     # # 2. The Checklist Section
